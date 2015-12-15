@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/*企业注册*/
+.register {
+  margin-top: 25px;
+}
+.register .re-title {
+  padding-left: 36px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.register .type {
+  padding: 20px 0;
+  text-align: center;
+  line-height: 28px;
+}
+.register .type .line {
+  display: inline-block;
+  height: 1px;
+  width: 60px;
+  margin: 0 2px;
+  vertical-align: middle;
+  background-color: #fc6303;
+}
+.register .type a {
+  font-size: 14px;
+}
+.register .type a.active {
+  color: #fc6303;
+}
+.register .form-list {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.register .form-one {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #ddd;
+}
+.register .form-two {
+  padding-top: 20px;
+}
+.register .form-two .fservice {
+  float: left;
+}
+
+.form-list .float-led {
+  margin-left: 30px;
+}
+.form-list .form-text {
+  border: 1px solid #ddd;
+  height: 34px;
+  padding-left: 3px;
+  width: 136px;
+  border-radius: 5px;
+}
+.form-list .textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+  padding: 3px;
+  width: 456px;
+  height: 100px;
+}
+.form-list .float-l .form-text {
+  width: 300px;
+}
+.form-list .float-l .form-textShort {
+  width: 180px;
+}
+.form-list .name {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  padding-right: 8px;
+  height: 34px;
+  line-height: 34px;
+}
+.form-list .name b {
+  color: #fc6303;
+}
+.form-list .nameed {
+  float: left;
+}
+.form-list .namejj {
+  vertical-align: top;
+}
+.form-list .explain {
+  padding-left: 105px;
+  margin-top: 8px;
+}
+.form-list .explain a {
+  color: #1ca7f4;
+  text-decoration: underline;
+}
+.form-list .form-select {
+  border: 1px solid #ddd;
+  height: 34px;
+  text-align: center;
+  width: 200px;
+  border-radius: 5px;
+}
+.form-list .form-selectShort {
+  width: 110px;
+}
+.form-list .form-textlen {
+  width: 740px;
+}
+.form-list .form-textShort {
+  width: 140px;
+}
+.form-list .form-textIn {
+  width: 240px;
+}
+.form-list .form-btn {
+  background-color: #1ca7f4;
+  color: #fff;
+  width: 160px;
+  height: 36px;
+  line-height: 36px;
+  margin-left: 108px;
+  border: 0;
+}
+
+.form-two .fservice {
+  position: relative;
+}
+.form-two .fservice .tag {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+.form-two .fservice .tag span {
+  display: inline-block;
+  padding: 0 5px;
+  background-color: #f0f0f0;
+  line-height: 30px;
+  margin-right: 5px;
+}
+.form-two .fservice .tag span b {
+  margin-left: 5px;
+}
+.form-two .fservice .tag span:last-child {
+  margin-right: 0;
+}
+
+.fservice .selectTag {
+  margin-top: 20px;
+}
+.fservice .selectTag .selectTag-list {
+  margin-bottom: 20px;
+}
+
+.owner .form-text {
+  margin-right: 9px;
+}
+.owner .form-text:last-child {
+  margin-right: 0;
+}
+.owner .owner-explain {
+  padding-left: 105px;
+  margin-top: 10px;
+  color: #fc6303;
+}
+
+.brandul li {
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+.brandul li:last-child {
+  margin-right: 0;
+}
+.brandul li img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.brandul li .brand-text {
+  width: 100px;
+  border: 1px solid #ddd;
+  height: 34px;
+  margin-top: 10px;
+  text-align: center;
+}
+.brandul li.last-li {
+  text-align: center;
+  background-color: #e6e6e6;
+  position: relative;
+  font-size: 100px;
+  color: #fff;
+  height: 100px;
+  line-height: 80px;
+}
+.brandul li.last-li .brand-file {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+.form-listArea .form-select {
+  width: 130px;
+}
+.form-listArea .form-textIn {
+  width: 335px;
+}
+
+/*企业注册*/
