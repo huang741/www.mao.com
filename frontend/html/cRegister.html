@@ -95,168 +95,225 @@
     <div class="register">
         <h2 class="re-title">企业注册</h2>
         <div class="type">
-            <a href="" class="active">基本信息</a><span class="line"></span><a href="">行业信息</a>
+            <a class="active">基本信息</a><span class="line"></span><a >行业信息</a>
         </div>
         <form>
-            <div class="form-one">
-                <div class="form-list cl">
-                    <div class="float-l">
-                        <span class="name"><b>*</b>企业名称</span><input type="text" placeholder="地区、字号、经营行业、公司体制" class="form-text" />
-                        <p class="explain">如：深圳市××科技有限公司</p>
+            <div class="con active" id="recon">
+                <div class="form-one">
+                    <div class="form-list cl">
+                        <div class="float-l">
+                            <span class="name"><b>*</b>企业名称</span><input type="text" placeholder="地区、字号、经营行业、公司体制" class="form-text" />
+                            <p class="explain">如：深圳市××科技有限公司</p>
+                        </div>
+                        <div class="float-l float-led">
+                            <span class="name"><b>*</b>工商注册号</span><input type="text" placeholder="请输入13位标准注册号码" class="form-text" />
+                        </div>
                     </div>
-                    <div class="float-l float-led">
-                        <span class="name"><b>*</b>工商注册号</span><input type="text" placeholder="请输入13位标准注册号码" class="form-text" />
+
+                    <div class="form-list">
+                        <span class="name">企业类型</span><select class="form-select">
+                        <option>请选择</option>
+                    </select>
+                    </div>
+
+                    <div class="form-list">
+                        <span class="name">企业人数</span><select class="form-select">
+                        <option>请选择</option>
+                    </select>
                     </div>
                 </div>
 
-                <div class="form-list">
-                    <span class="name">企业类型</span><select class="form-select">
-                      <option>请选择</option>
-                </select>
-                </div>
+                <div class="form-two">
+                    <div class="form-list cl">
+                        <span class="name nameed">业务类型</span>
+                        <div class="fservice">
+                            <div>
+                                <div class="form-text form-textlen"></div>
+                                <div class="tag">
+                                    <span>主板开发<b>×</b></span><span>主板开发<b>×</b></span><span>主板开发<b>×</b></span>
+                                </div>
+                            </div>
+                            <div class="selectTag">
+                                <div class="selectTag-list">
+                                    <select class="form-select">
+                                        <option>请选择</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select class="form-select">
+                                        <option>请选择</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="form-list">
-                    <span class="name">企业人数</span><select class="form-select">
-                    <option>请选择</option>
-                </select>
+                    <div class="form-list owner">
+                        <span class="name">主营产品</span><input type="text" class="form-text" /><input type="text" class="form-text" /><input type="text" class="form-text" /><input type="text" class="form-text" /><input type="text" class="form-text" />
+                        <p class="owner-explain">增加5个</p>
+                    </div>
+
+                    <div class="form-list">
+                        <span class="name namejj">公司简介</span><textarea class="textarea"></textarea>
+                    </div>
+
+                    <div class="form-list cl">
+                        <span class="name namejj float-l">企业品牌</span>
+                        <div class="float-l">
+                            <ul class="brandul">
+                                <li>
+                                    <img src="../images/icon-hot.png" />
+                                    <input type="text" placeholder="品牌名称" class="brand-text" />
+                                </li>
+                                <li class="last-li">
+                                    <input type="file" class="brand-file">
+                                    <span>+</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form-list cl">
+                        <span class="name nameed">关注产业圈</span>
+                        <div class="fservice">
+                            <div>
+                                <div class="form-text form-textlen"></div>
+                                <div class="tag">
+                                    <span>主板开发<b>×</b></span><span>摄影<b>×</b></span><span>机器人<b>×</b></span>
+                                </div>
+                            </div>
+                            <div class="selectTag">
+                                <div class="selectTag-list">
+                                    <select class="form-select">
+                                        <option>待完善</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select class="form-select">
+                                        <option>待完善</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-list">
+                        <span class="name">企业成立年份</span><select class="form-select">
+                        <option>1945</option>
+                    </select>
+                    </div>
+
+                    <div class="form-list cl">
+                        <div class="float-l">
+                            <span class="name">办公面积</span><select class="form-select form-selectShort margin-right10">
+                            <option>自建</option>
+                        </select><input type="text" placeholder="如：5000" class="form-text form-textShort" />
+                        </div>
+                        <div class="float-l float-led">
+                            <span class="name">注册资本</span><input type="text" placeholder="如：5,000" class="form-text form-textShort" /><select class="form-select form-selectShort margin-left10">
+                            <option>人民币</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="form-list form-listArea">
+                        <span class="name">经营面积</span>
+                        <select class="form-select">
+                            <option>广东省</option>
+                        </select>
+                        <select class="form-select">
+                            <option>二级城市分类</option>
+                        </select>
+                        <select class="form-select">
+                            <option>三级级城市分类</option>
+                        </select>
+                        <input type="text" class="form-text form-textIn">
+                    </div>
+
+                    <div class="form-list">
+                        <span class="name">企业网址</span><input type="text" class="form-text form-textlen" placeholder="如：www.aaa.com 不要加http://">
+                    </div>
+
+                    <div class="form-list">
+                        <span class="name">固定电话</span><input type="text" class="form-text form-textshort margin-right10" ><input type="text" class="form-text form-textIn" >
+                    </div>
+
+                    <div class="form-list">
+                        <span class="name">传真</span><input type="text" class="form-text form-textshort margin-right10" ><input type="text" class="form-text form-textIn" >
+                    </div>
+
+                    <div class="form-list">
+                        <span class="name">企业类型</span><select class="form-select">
+                        <option>请选择</option>
+                    </select>
+                    </div>
+
+                    <div class="form-list">
+                        <p class="explain"><label><input type="checkbox" /> 我已阅读并同意<a href="">《服务条款》</a></label>及<a href="">《隐私权政策》</a></p>
+                        </select>
+                    </div>
+
+                    <div class="form-list">
+                        <input type="button" value="下一步" class="form-btn" id="next">
+                    </div>
                 </div>
             </div>
 
-            <div class="form-two">
+            <div class="con" id="recon1">
+                <div class="form-list">
+                    <span class="name">研发人数</span><input type="text" class="form-text form-textIn" placeholder="研发人数" >
+                </div>
+
                 <div class="form-list cl">
                     <span class="name nameed">业务类型</span>
-                    <div class="fservice">
-                        <div>
-                            <div class="form-text form-textlen"></div>
+                    <div class="nservice">
+                        <div class="nserviceText">
+                            <div class="form-text"></div>
                             <div class="tag">
                                 <span>主板开发<b>×</b></span><span>主板开发<b>×</b></span><span>主板开发<b>×</b></span>
                             </div>
                         </div>
                         <div class="selectTag">
-                            <div class="selectTag-list">
+                                <select class="form-select margin-right10">
+                                    <option>请选择</option>
+                                </select>
                                 <select class="form-select">
                                     <option>请选择</option>
                                 </select>
-                            </div>
-                            <div>
-                                <select class="form-select">
-                                    <option>请选择</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-list owner">
-                    <span class="name">主营产品</span><input type="text" class="form-text" /><input type="text" class="form-text" /><input type="text" class="form-text" /><input type="text" class="form-text" /><input type="text" class="form-text" />
-                    <p class="owner-explain">增加5个</p>
-                </div>
-
-                <div class="form-list">
-                    <span class="name namejj">公司简介</span><textarea class="textarea"></textarea>
-                </div>
-
-                <div class="form-list cl">
-                    <span class="name namejj float-l">企业品牌</span>
-                    <div class="float-l">
-                        <ul class="brandul">
-                            <li>
-                                <img src="../images/icon-hot.png" />
-                                <input type="text" placeholder="品牌名称" class="brand-text" />
-                            </li>
-                            <li class="last-li">
-                                <input type="file" class="brand-file">
-                                <span>+</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="form-list cl">
-                    <span class="name nameed">关注产业圈</span>
-                    <div class="fservice">
-                        <div>
-                            <div class="form-text form-textlen"></div>
-                            <div class="tag">
-                                <span>主板开发<b>×</b></span><span>摄影<b>×</b></span><span>机器人<b>×</b></span>
-                            </div>
-                        </div>
-                        <div class="selectTag">
-                            <div class="selectTag-list">
-                                <select class="form-select">
-                                    <option>待完善</option>
-                                </select>
-                            </div>
-                            <div>
-                                <select class="form-select">
-                                    <option>待完善</option>
-                                </select>
-                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-list">
-                    <span class="name">企业成立年份</span><select class="form-select">
-                    <option>1945</option>
-                </select>
-                </div>
-
-                <div class="form-list cl">
-                    <div class="float-l">
-                        <span class="name">办公面积</span><select class="form-select form-selectShort margin-right10">
-                        <option>自建</option>
-                    </select><input type="text" placeholder="如：5000" class="form-text form-textShort" />
-                    </div>
-                    <div class="float-l float-led">
-                        <span class="name">注册资本</span><input type="text" placeholder="如：5,000" class="form-text form-textShort" /><select class="form-select form-selectShort margin-left10">
-                        <option>人民币</option>
-                    </select>
-                    </div>
-                </div>
-
-                <div class="form-list form-listArea">
-                    <span class="name">经营面积</span>
-                    <select class="form-select">
-                        <option>广东省</option>
-                    </select>
-                    <select class="form-select">
-                        <option>二级城市分类</option>
-                    </select>
-                    <select class="form-select">
-                        <option>三级级城市分类</option>
-                    </select>
-                    <input type="text" class="form-text form-textIn">
+                    <span class="name">办公面积</span><input type="text" class="form-text form-textIn" >
                 </div>
 
                 <div class="form-list">
-                    <span class="name">企业网址</span><input type="text" class="form-text form-textlen" placeholder="如：www.aaa.com 不要加http://">
-                </div>
-
-                <div class="form-list">
-                    <span class="name">固定电话</span><input type="text" class="form-text form-textshort margin-right10" ><input type="text" class="form-text form-textIn" >
-                </div>
-
-                <div class="form-list">
-                    <span class="name">传真</span><input type="text" class="form-text form-textshort margin-right10" ><input type="text" class="form-text form-textIn" >
-                </div>
-
-                <div class="form-list">
-                    <span class="name">企业类型</span><select class="form-select">
+                    <span class="name">生产方式</span><select class="form-select">
                     <option>请选择</option>
                 </select>
                 </div>
 
                 <div class="form-list">
-                    <p class="explain"><label><input type="checkbox" /> 我已阅读并同意<a href="">《服务条款》</a></label>及<a href="">《隐私权政策》</a></p>
+                    <span class="name">商务模式</span><input type="text" class="form-text form-textIn margin-right10" ><select class="form-select">
+                    <option>研发+生产+销售</option>
                 </select>
                 </div>
 
                 <div class="form-list">
-                    <input type="submit" value="下一步" class="form-btn">
+                    <span class="name">应用专精领域</span><input type="text" class="form-text form-textIn margin-right10" ><select class="form-select">
+                    <option>轨道交通</option>
+                </select>
+                </div>
+
+                <div class="form-list">
+                    <span class="name">专精产品</span><input type="text" class="form-text form-textIn" >
+                </div>
+
+                <div class="form-list">
+                    <input type="submit" value="注册" class="form-btn" />
                 </div>
             </div>
-
         </form>
     </div>
 </div>
@@ -289,5 +346,12 @@
        </ul>
     </div>
 </div>
+<script src="../js/jquery.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    $(function(){
+        registerShow();
+    })
+</script>
 </body>
 </html>

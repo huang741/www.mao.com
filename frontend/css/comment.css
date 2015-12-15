@@ -212,6 +212,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 .top-site-wrap {
   height: 35px;
   background-color: #f7f7f7;
+  min-width: 1000px;
 }
 .top-site-wrap .float-l .set-loginInfo {
   line-height: 35px;
@@ -396,6 +397,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 .nav-center .nav-hd {
   height: 48px;
   margin-left: 180px;
+  border-bottom: 1px solid #ddd;
 }
 .nav-center .nav-hd li {
   float: left;
@@ -435,7 +437,6 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 .J_slide_nav .s-nav-hd {
   height: 48px;
   width: 100%;
-  border-bottom: 1px solid #ddd;
 }
 .J_slide_nav .s-nav-hd span {
   background: transparent url("../images/icon-list.png") no-repeat scroll 0 0;
@@ -459,6 +460,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
   margin-top: 100px;
   background: transparent url("../images/copyright-bg.png") repeat scroll 0 0;
   color: #fff;
+  min-width: 1000px;
 }
 .footer .container {
   padding: 20px 0;

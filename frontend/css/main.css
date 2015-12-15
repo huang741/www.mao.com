@@ -2,6 +2,7 @@
 /*企业注册*/
 .register {
   margin-top: 25px;
+  min-height: 400px;
 }
 .register .re-title {
   padding-left: 36px;
@@ -40,6 +41,12 @@
 }
 .register .form-two .fservice {
   float: left;
+}
+.register .con {
+  display: none;
+}
+.register .con.active {
+  display: block;
 }
 
 .form-list .float-led {
@@ -206,4 +213,89 @@
   width: 335px;
 }
 
+.nservice {
+  float: left;
+  position: relative;
+}
+.nservice .tag {
+  left: 3px;
+  position: absolute;
+  top: 3px;
+}
+.nservice .tag span {
+  background-color: #f0f0f0;
+  display: inline-block;
+  line-height: 30px;
+  margin-right: 5px;
+  padding: 0 5px;
+}
+.nservice .nserviceText {
+  float: left;
+  margin-right: 10px;
+}
+.nservice .selectTag {
+  float: left;
+}
+
+.form-list .nserviceText .form-text {
+  width: 330px;
+}
+
 /*企业注册*/
+/*找回密码*/
+.forgetpsw {
+  margin-top: 20px;
+}
+.forgetpsw .form-list .form-code {
+  margin-left: 10px;
+  width: 100px;
+}
+
+.register .success {
+  color: #fc6303;
+  font-size: 30px;
+  margin-left: 36px;
+  margin-top: 40px;
+}
+.register .success img {
+  margin-right: 10px;
+}
+
+/*找回密码*/
+/*注册成功跳转*/
+.skip {
+  padding: 60px;
+}
+.skip .td {
+  float: left;
+}
+.skip .skip-right {
+  margin-left: 15px;
+  font-size: 14px;
+}
+.skip .skip-right h2 {
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+.skip .explain span {
+  color: #fc6303;
+  margin-right: 15px;
+}
+.skip .skipul {
+  margin-top: 15px;
+}
+.skip .skipul li {
+  float: left;
+  width: 160px;
+  text-align: center;
+  height: 32px;
+  border: 1px solid #ccc;
+  line-height: 32px;
+  background-color: #e5e5e5;
+  margin-right: 10px;
+}
+.skip .skipul li a {
+  display: block;
+}
+
+/*注册成功跳转*/
