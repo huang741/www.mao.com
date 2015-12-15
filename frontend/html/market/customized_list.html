@@ -610,10 +610,40 @@
 
 </div>
 <div class="container">
-    <div class="img">
+    <div class="market_banner">
         <img src="../../images/customized_list_banner.png" />
     </div>
-    <div>
+    <div class="market_top">
+        <p class="title">当前位置：主页/X86（共<b>595</b>条需求）</p>
+        <p class="item">芯片机构：
+            <span ><a class="selected">全部</a></span>
+            <span><a>MCU</a></span>
+            <span><a>DSP</a></span>
+            <span><a>MCU</a></span>
+            <span><a>X86</a></span>
+            <span><a>FGQA</a></span>
+            <span><a>CPLD</a></span>
+        </p>
+        <p class="item">应用领域：
+            <span ><a class="selected">全部</a></span>
+            <span><a>玩具</a></span>
+            <span><a>医疗</a></span>
+            <span><a>汽车</a></span>
+            <span><a>能源</a></span>
+            <span><a>车载</a></span>
+        </p>
+        <p class="item">资金托管：
+            <span ><a class="selected">全部</a></span>
+            <span><a>竞标</a></span>
+            <span><a>悬赏</a></span>
+        </p>
+        <p class="item">需求等级：
+            <span ><a class="selected">全部</a></span>
+            <span><a>系统级别需求</a></span>
+            <span><a>成品定制</a></span>
+            <span><a>办卡定制</a></span>
+            <span><a>软件低昂至</a></span>
+        </p>
 
     </div>
 </div>
@@ -702,18 +732,18 @@
 </html>
 <script>
     $(function(){
-        $(".J_slide_nav").bind({
-                    mouseover: function (){
-                        $(".s-nav-bd").removeClass('hide').addClass('show');
-                        $(".silde-hd").removeClass('hide').addClass('show');
-                    },
-                    mouseout:function(){
-                        $(".s-nav-bd").removeClass('show').addClass('hide');
-                        $(".silde-hd").removeClass('show').addClass('hide');
-                    }
-
-                }
-        )
+//        $(".J_slide_nav").bind({
+//                    mouseover: function (){
+//                        $(".s-nav-bd").removeClass('hide').addClass('show');
+//                        $(".silde-hd").removeClass('hide').addClass('show');
+//                    },
+//                    mouseout:function(){
+//                        $(".s-nav-bd").removeClass('show').addClass('hide');
+//                        $(".silde-hd").removeClass('show').addClass('hide');
+//                    }
+//
+//                }
+//        )
 
         $('.J_slide .tab-title li ').tab({tabBd : '.J_slide .t-bd-list'})
         $('.J_slide_nav .s-nav-bd li ').tab({tabBd : '.J_slide_nav .hd-list-bd'})

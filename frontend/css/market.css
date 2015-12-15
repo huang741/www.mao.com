@@ -7,3 +7,34 @@
     top: 220px;
     left: 149px;
 }
+.market_banner img{
+
+    width: 100%;
+}
+.market_top{
+    /*width: 100%;*/
+    /*height: 200px;*/
+    background-color: #f7f7f7;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.market_top .title{
+    font-size: 16px;
+    color: #555555;
+}
+.market_top .title b{
+    color: #009ffa;
+}
+.market_top .item{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.market_top .item span{
+
+    padding: 10px;
+}
+.selected{
+    color: orangered !important;
+}
