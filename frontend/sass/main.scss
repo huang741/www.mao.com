@@ -313,3 +313,69 @@
   }
 }
 /*注册成功跳转*/
+
+/*登录*/
+.login{
+  margin-top: 20px;
+  .logincon{
+    width: 500px;
+    float: left;
+    &:first-child{
+      width: 499px;
+      border-right: 1px solid #ddd;
+    }
+    .form-code{
+      margin-left: 10px;
+      border: 0;
+      width: 95px;
+      text-align: center;
+      line-height: 34px;
+      height: 34px;
+      background-color: #999;
+      color: #fff;
+    }
+    .form-hqcode{
+      margin-left: 10px;
+      border: 0;
+      width: 95px;
+      text-align: center;
+      line-height: 34px;
+      height: 34px;
+      background-color: #1ca7f4;
+      color: #fff;
+    }
+    .forgetpsw-a{
+      margin-left: 25px;
+    }
+    .re-btn{
+      display: block;
+      width: 360px;
+      height: 55px;
+      border: 1px solid #000;
+      border-radius: 50px;
+      text-align: center;
+      line-height: 55px;
+      font-size: 30px;
+      margin: auto;
+    }
+    .re-img{
+      width: 280px;
+      margin: 30px auto 0;
+      .float-l{
+        width:100px;
+        text-align: center;
+        p{
+          margin-bottom: 8px;
+        }
+        &:first-child{
+          margin-right: 70px;
+        }
+      }
+    }
+  }
+}
+/*登录*/
+
+/*注册*/
+
+/*注册*/
