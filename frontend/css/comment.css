@@ -50,6 +50,7 @@ body, th, td, button, input, select, textarea {
 
 body {
   line-height: 1;
+  background-color: #fafafa;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -478,6 +479,14 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 }
 .footer .nav li a {
   color: #fff;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none;
 }
 
 /*尾部*/

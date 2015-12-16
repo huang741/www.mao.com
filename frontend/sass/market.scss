@@ -1,0 +1,570 @@
+@charset "utf-8";
+/*服务==定制类项目开发需求*/
+.market{
+  margin-top:20px;
+}
+.market_banner img{
+  width: 100%;
+}
+.market_top{
+  background-color: #f7f7f7;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.market_top .title{
+  font-size: 16px;
+  color: #555555;
+}
+.market_top .title b{
+  color: #009ffa;
+}
+.market_top .item{
+  margin-top: 20px;
+  font-size: 14px;
+}
+.market_top .item span{
+  padding: 10px;
+}
+.selected{
+  color: orangered !important;
+}
+.market-con .title{
+  margin: 15px 0;
+  font-size: 26px;
+}
+.marketll .l{
+  width: 750px;
+}
+.marketll .sort{
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  padding-bottom: 5px;
+}
+.marketll .sort li{
+  float: left;
+  padding: 10px 20px;
+}
+.marketll .sort li i{
+  margin-left: 3px;
+}
+.marketll .sort li.last-li{
+  position: absolute;
+  right: 0;
+}
+.marketll .sort li.last-li a{
+  color: #a8a8a8;
+}
+.marketll .sort li.last-li span{
+  margin-left: 20px;
+  input{
+    margin-right: 5px;
+  }
+}
+.marketll .list{
+  padding: 0 10px;
+}
+.marketll .list li{
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+.marketll .list li .td{
+  display: table-cell;
+  vertical-align: top;
+}
+.marketll .list li .one{
+  width: 386px;
+  overflow: hidden;
+}
+.marketll .list li .ltitle{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.marketll .list li .content{
+  line-height: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #555;
+}
+.marketll .list li .deputy{
+  color: #b6b6b6;
+}
+.marketll .list li .deputy span{
+  margin-right: 10px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.marketll .list li .two{
+  width: 300px;
+  text-align: center;
+  vertical-align: middle;
+  color: #ff2828;
+  font-size: 16px;
+}
+.marketll .list li .three{
+  width: 44px;
+  text-align: center;
+  vertical-align: middle;
+  .circle{
+    background-color: #ccc;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    line-height: 20px;
+  }
+  i{
+    color: #fff;
+  }
+}
+.marketll .list li.active .three .circle{
+  background-color: #f9671e;
+}
+.page{
+  display: table;
+  margin: 10px auto;
+  li{
+    float: left;
+    padding:5px 8px;
+    margin: 0 3px;
+    &.active{
+      background-color: #999;
+      border-radius: 6px;
+      a{
+        color: #fff;
+      }
+    }
+  }
+}
+.marketll .r{
+  width: 240px;
+  margin-left: 10px;
+  .r-head{
+    border-bottom: 1px solid #ddd;
+    li{
+      float: left;
+      width: 120px;
+      text-align: center;
+      padding: 10px 0 15px;
+      font-weight: 600;
+      &.active{
+        color: #f9671e;
+        border-bottom: 2px solid #f9671e;
+      }
+      &:hover{
+        color: #f9671e;
+      }
+    }
+  }
+}
+.r-con .projectlist{
+  margin: auto 10px;
+  background-color: #fff;
+  display: none;
+  &.active{
+    display: block;
+  }
+  li{
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    .money{
+      color: #f9671e;
+      margin-bottom: 10px;
+    }
+    .explain{
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .tail{
+      color: #b6b6b6;
+      position: relative;
+    }
+    .tailed{
+      margin-bottom: 5px;
+    }
+    .times{
+      position: absolute;
+      right: 10px;
+    }
+  }
+}
+.market .tailpic{
+  margin-top: 20px;
+}
+/*服务==定制类项目开发需求*/
+
+/*服务==技术服务市场-列表页*/
+.skill_banner img{
+  &.img1{
+    width: 610px;
+    margin-right: 20px;
+  }
+  &.img2{
+    width: 370px;
+  }
+}
+.marketll .sort li.first-li{
+  background-color: #b3b3b3;
+  color: #fff;
+  border-radius: 8px;
+  i{
+    margin-right: 5px;
+    font-size: 14px;
+  }
+}
+.list li .one .o-img{
+   width: 100px;
+   height: 100px;
+  overflow: hidden;
+  img{
+    width: 100px;
+    height: 100px;
+  }
+}
+.list li .one .o-con{
+  padding-left: 10px;
+  .content{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    span{
+      margin-right: 20px;
+    }
+  }
+}
+
+/*服务==技术服务市场-列表页*/
+
+/*服务==技术服务市场-列表页*/
+.skillDetail{
+  margin-top: 40px;
+  .l{
+    width: 680px;
+    .skill-l-two{
+      margin-top: 30px;
+      border: 1px solid #ddd;
+    }
+  }
+  .r{
+    width: 310px;
+    margin-left: 10px;
+  }
+}
+.skill-l-one{
+  .reading{
+    .big-img{
+      width: 240px;
+      height: 240px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      img{
+        width: 240px;
+        height: 240px;
+      }
+    }
+    .sub-img{
+      width: 240px;
+      overflow: hidden;
+      height: 50px;
+    }
+  }
+  .property{
+    margin-left: 30px;
+    width: 310px;
+  }
+}
+.reading .sub-img li{
+ float: left;
+  width: 50px;
+  margin: 0 5px;
+}
+.reading .sub-img li img{
+  height: 50px;
+  width: 50px;
+}
+.property .p-title{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.property .p-price{
+  background-color: #ebeded;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+  span{
+    color: #fe3f3f;
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+.property .number{
+  padding: 0 5px;
+  margin-bottom: 30px;
+  .number-text{
+    width:60px;
+    border: 1px solid #ddd;
+    height: 28px;
+    padding-left: 5px;
+    margin-left: 25px;
+  }
+}
+.property .p-btn{
+  display: block;
+  text-align: center;
+  background-color: #f9671e;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+}
+.skill-l-two{
+  .t-head{
+    border-bottom: 1px solid #ddd;
+    li{
+      float: left;
+      padding: 10px 0;
+      border-top: 3px solid #fafafa;
+      width: 105px;
+      text-align: center;
+      &:first-child{
+        border-right: 1px solid #ddd;
+      }
+      &.active{
+        border-top: 3px solid #f9671e;
+      }
+    }
+  }
+  .t-detail{
+    padding: 10px;
+    .con{
+      display: none;
+      &.active{
+        display: block;
+      }
+      .con-p{
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.panel{
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  .panel-head{
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  .panel-body{
+    padding: 10px 20px;
+  }
+  .info{
+    p{
+      margin-bottom: 10px;
+    }
+    .star{
+      span{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        background-color: #f9671e;
+        margin-right: 10px;
+        i{
+          color: #fff;
+        }
+      }
+    }
+    .attestation{
+      span{
+        margin-right: 10px;
+        i{
+          color: #fc6303;
+          margin-right: 5px;
+        }
+      }
+    }
+    .blank{
+      padding: 0 6px;
+    }
+    .info-btn{
+      display: block;
+      width: 160px;
+      height: 36px;
+      text-align: center;
+      line-height: 36px;
+      background-color: #1ca7f4;
+      color: #fff;
+    }
+  }
+  .groom{
+    li{
+      position: relative;
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .g-img{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        left: 0;
+        top: 0;
+        img{
+          height: 50px;
+          width: 50px;
+        }
+      }
+      .g-con{
+        height: 50px;
+        overflow: hidden;
+        padding-left: 60px;
+        h2{
+          margin-bottom: 10px;
+          font-size: 14px;
+        }
+        p{
+          color: #a9a9a9;
+        }
+      }
+    }
+  }
+}
+/*服务==技术服务市场-列表页*/
+
+/*快捷需求详情*/
+.needDetail{
+  margin-top: 35px;
+}
+.need-head .need-h-logo{
+  float: left;
+  width: 225px;
+  border-right: 1px solid #ddd;
+  img{
+    width: 212px;
+  }
+}
+.need-head .need-h-explain{
+  float: left;
+  margin-left: 13px;
+  h2{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  p{
+    color: #747474;
+    em{
+      padding: 0 10px;
+      color: #ddd;
+    }
+  }
+}
+.needDetail .need-center{
+  padding: 20px;
+  background-color: #f7f7f7;
+  margin-top: 30px;
+}
+.need-center .l{
+  width: 499px;
+  border-right: 1px solid #ddd;
+}
+.need-center .l h2{
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.need-center .l .money{
+  font-size: 18px;
+  color: #fc6303;
+  margin-bottom: 38px;
+}
+.need-center .l .explain{
+  margin-bottom: 30px;
+  p{
+    line-height: 20px;
+    &.budget{
+      color: #fc6303;
+    }
+  }
+}
+.need-center .l .need-btn{
+  display: block;
+  width: 200px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  i{
+    margin-right: 5px;
+  }
+}
+.need-center .r{
+  padding-left: 30px;
+  .title{
+    margin-top: 35px;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .times{
+    font-size: 30px;
+    color: #ffaf51;
+    font-weight: 600;
+  }
+  .need-btn{
+    display: block;
+    width: 380px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    background-color: #ffaf51;
+    border-radius: 8px;
+    margin-top: 25px;
+    color: #fff;
+  }
+}
+.needDetail .need-list{
+  margin-top: 30px;
+}
+.need-list .l{
+  width: 680px;
+  .need-list-border{
+    border: 1px solid #ddd;
+  }
+}
+.need-list .r{
+  width: 310px;
+  margin-left: 10px;
+}
+.need-list .t-head {
+  border-bottom: 1px solid #ddd;
+}
+.need-list .t-head li.active {
+  border-top: 3px solid #f9671e;
+}
+.need-list .t-head li:first-child {
+  border-right: 1px solid #ddd;
+}
+.need-list .t-head li {
+  border-top: 3px solid #fafafa;
+  float: left;
+  padding: 10px 0;
+  text-align: center;
+  width: 105px;
+}
+.need-list .t-detail {
+  padding: 10px;
+}
+.need-list .t-detail .con{
+  display: none;
+}
+.need-list .t-detail .con.active {
+  display: block;
+}
+.need-list .t-detail .con .con-p {
+  margin-bottom: 10px;
+}
+/*快捷需求详情*/
