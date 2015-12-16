@@ -1,0 +1,152 @@
+body{
+    background-color: #ffffff;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+}
+.search{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.search p{
+    padding-top: 20px;
+    font-size: 14px;
+}
+.search p input{
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    border: solid 1px #C2C2C2;
+    margin-left: 10px;
+}
+.search  p .btn{
+    background-color: rgba(0,165,250,1);
+    color: #ffffff;
+    font-size: 14px;
+    border: 0;
+    width: 160px;
+}
+/*.employll .l {*/
+    /*width: 750px;*/
+/*}*/
+.employll .sort {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-bottom: 5px;
+}
+.employll .sort li {
+    float: left;
+    padding: 10px 20px;
+}
+.employll .sort li i {
+    margin-left: 3px;
+}
+.employll .list {
+    padding: 0 10px;
+}
+.employll .list li {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+.employll .list li .one {
+    width: 700px;
+    overflow: hidden;
+}
+.employll .list  .ltitle{
+    /*padding-top: 10px;*/
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.employll .list .content span{
+    margin-right: 10px;
+}
+.employll .list li .td {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.employll .list li .two {
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+
+    font-size: 16px;
+}
+.employll .list li .two b{
+    color: #ff2828;
+}
+.employDetail {
+    margin-top: 20px;
+    height: 100%;
+    overflow: hidden;
+}
+.employDetail .left{
+    width: 655px;
+    margin-right: 40px;
+}
+.employDetail .left table{
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    text-align: center;
+    ;
+    /*border: solid 1px #a8a8a8;*/
+}
+.employDetail .left table tr {
+    /*border: solid 1px #a8a8a8;*/
+}
+.employDetail .left table tr td{
+    border: solid 1px #a8a8a8;
+    /*width: 20%;*/
+    height: 38px;
+    margin: 0 ;
+    padding: 0;
+    border-collapse:collapse
+}
+.color{
+    background-color: #fafafa;
+}
+.tCompany_text {
+    padding: 20px;
+}
+.tCompany_text h2 {
+    font-size: 18px;
+    color: #5b5b5b;
+    padding-bottom: 20px;
+}
+.tCompany_text p {
+    font-size: 14px;
+    color: #5a5a5a;
+    line-height: 32px;
+}
+.tCompany_text .biao{
+    display: inline-block;
+    border: solid 1px red;
+    background-color: red;
+    width: 2px;
+    height: 14px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+.employDetail .right{
+    width: 300px;
+    border: solid 1px #a8a8a8;
+    padding-bottom: 15px;
+}
+.employDetail .right p{
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 14px;
+
+}
+.employDetail .right p:first-child{
+    line-height: 40px;
+    font-size: 16px;
+    border-bottom: solid 1px #84848c;
+    padding-left: 20px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
