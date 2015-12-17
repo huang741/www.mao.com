@@ -376,6 +376,306 @@
 }
 /*登录*/
 
-/*注册*/
+/*支付*/
+.pay{
+  margin-top: 20px;
+  .payUl{
+    border: 1px solid #ddd;
+    li{
+      float: left;
+      height: 45px;
+      line-height: 45px;
+      width: 110.88px;
+      text-align: center;
+      &.active{
+        background-color: #e6e6e6;
+      }
+      a{
+        display: block;
+      }
+      i{
+        margin-right: 8px;
+      }
+    }
+  }
+  .payCon{
+    margin-top: 20px;
+    .pay-title{
+      padding: 15px;
+      font-size: 24px;
+      border-bottom: 1px solid #ddd;
+    }
+    .pay-head{
+      width: 722px;
+      margin: 20px auto 30px;
+      font-size: 0;
+    }
+  }
+  .pay-success{
+    margin-top: 20px;
+    margin-left: 30px;
+    color: #fc6303;
+    font-size: 18px;
+    font-weight: 600;
+    img{
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+  }
+}
+.payCon .pay-head span{
+  display: inline-block;
+  font-size: 14px;
+  &.name{
+    width: 120px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #ddd;
+    &.active{
+      color: #fc6303;
+      border: 1px solid #fc6303;
+    }
+  }
+  &.line{
+    height: 1px;
+    width: 63px;
+    margin: -10px 7.5px 0;
+    background-color: #ddd;
+    line-height: 45px;
+    vertical-align: middle;
+  }
+}
+.payCon{
+  .pay-info{
+    padding-left: 35px;
+    .money{
+      font-size: 14px;
+      span{
+        color: #fc6303;
+        font-weight: 600;
+      }
+    }
+    .terrace{
+      margin-top: 30px;
+      .t-title{
+        border-left: 2px solid #fc6303;
+        padding-left: 10px;
+      }
+    }
+  }
+  .pay-btn{
+    display: block;
+    margin: 20px auto;
+    width: 160px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #1ca7f4;
+    color: #fff;
+    text-align: center;
+  }
+}
+.terraceUl{
+  padding: 20px;
+  li{
+    float: left;
+    text-align: center;
+    margin-right: 30px;
+    &:last-child{
+      margin-right: 0;
+    }
+    .pay-card{
+      width: 120px;
+      height: 77px;
+      border: 1px solid #ddd;
+      display: block;
+      margin-bottom: 10px;
+    }
+    i{
+      font-size: 16px;
+      color: #ccc;
+    }
+    &.active{
+      i{
+        color: #fc6303;
+      }
+    }
+  }
+}
+/*支付*/
 
-/*注册*/
+/*购买订单*/
+.pay-buy{
+  padding: 20px;
+  .buy-title{
+    border-left: 2px solid #fc6303;
+    padding-left: 10px;
+    font-weight: 600;
+  }
+  .addressList{
+    padding: 30px 25px;
+    li{
+      position: relative;
+    }
+    li.active{
+      font-weight: 600;
+      .case{
+        border: 1px solid #fc6303;
+      }
+      i{
+        color: #fc6303;
+      }
+    }
+   .case{
+     padding: 5px;
+     width: 780px;
+   }
+    .amend{
+      position: absolute;
+      right: 50px;
+      top: 5px;
+      color: #999;
+    }
+    .last-li{
+      padding-left: 10px;
+      margin-top: 10px;
+      a{
+        display: block;
+        width: 160px;
+        text-align: center;
+        height: 35px;
+        line-height: 35px;
+        background-color: #009ffa;
+        color: #fff;
+      }
+    }
+  }
+}
+.payBuy-two .buy-type{
+  padding: 10px;
+}
+.buy-table > .tr > div{
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px 0;
+  &:nth-of-type(1){
+    width: 120px;
+  }
+  &:nth-of-type(2){
+    width: 188px;
+  }
+  &:nth-of-type(3){
+    width: 222px;
+  }
+  &:nth-of-type(4){
+    width: 100px;
+  }
+  &:nth-of-type(5){
+    width: 120px;
+  }
+  &:nth-of-type(6),&:nth-of-type(7){
+    width: 100px;
+  }
+  .td-img{
+    width: 100px;
+    height: 100px;
+  }
+  .td-text{
+    width: 60px;
+    border: 1px solid #ddd;
+  }
+}
+.buy-table > .trhead > div{
+  height: 16px;
+}
+.buy-explain{
+  margin-top: 20px;
+  .explain-list{
+    margin-bottom: 20px;
+    position: relative;
+    .ex-textarea{
+      width: 410px;
+      height: 80px;
+      padding: 5px;
+      border: 1px solid #ddd;
+      resize: none;
+      border-radius: 6px;
+    }
+    .way{
+      position: absolute;
+      right: 0;
+      top: 0;
+      select{
+        border: 1px solid #ddd;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        margin-left: 10px;
+      }
+    }
+    .ex-text{
+      width: 280px;
+      height: 35px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-right: 10px;
+    }
+    .ex-a{
+      position: relative;
+      width: 130px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      display: inline-block;
+      background-color: #999;
+      color: #fff;
+      border-radius: 6px;
+      .ex-file{
+        position: absolute;
+        width: 120px;
+        height: 35px;
+        opacity: 0;
+        top: 0;
+        left: 0;
+      }
+    }
+    .format{
+      color: #999;
+      margin-top: 10px;
+      line-height: 20px;
+    }
+  }
+}
+.payBuy-two .buy-address{
+  background-color: #f0f0f0;
+  padding: 15px;
+  margin-top: 50px;
+  position: relative;
+  p{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .total{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    font-size: 20px;
+    b{
+      color: #fc6303;
+    }
+  }
+}
+.payBuy-two .buy-btn{
+  display: block;
+  background-color: #1ca7f4;
+  width: 160px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  margin: 30px auto 0;
+}
+/*购买订单*/

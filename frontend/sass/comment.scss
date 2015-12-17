@@ -53,6 +53,113 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 .margin-right10{
   margin-right: 10px;
 }
+.w680{
+  width: 680px;
+}
+.w310{
+  width: 310px;
+  margin-left: 10px;
+}
+.page{
+  display: table;
+  margin: 10px auto;
+  li{
+    float: left;
+    padding:5px 8px;
+    margin: 0 3px;
+    &.active{
+      background-color: #999;
+      border-radius: 6px;
+      a{
+        color: #fff;
+      }
+    }
+  }
+}
+.panel{
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  .panel-head{
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  .panel-body{
+    padding: 10px 20px;
+  }
+  .info{
+    p{
+      margin-bottom: 10px;
+    }
+    .star{
+      span{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        background-color: #f9671e;
+        margin-right: 10px;
+        i{
+          color: #fff;
+        }
+      }
+    }
+    .attestation{
+      span{
+        margin-right: 10px;
+        i{
+          color: #fc6303;
+          margin-right: 5px;
+        }
+      }
+    }
+    .blank{
+      padding: 0 6px;
+    }
+    .info-btn{
+      display: block;
+      width: 160px;
+      height: 36px;
+      text-align: center;
+      line-height: 36px;
+      background-color: #1ca7f4;
+      color: #fff;
+    }
+  }
+  .groom{
+    li{
+      position: relative;
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .g-img{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        left: 0;
+        top: 0;
+        img{
+          height: 50px;
+          width: 50px;
+        }
+      }
+      .g-con{
+        height: 50px;
+        overflow: hidden;
+        padding-left: 60px;
+        h2{
+          margin-bottom: 10px;
+          font-size: 14px;
+        }
+        p{
+          color: #a9a9a9;
+        }
+      }
+    }
+  }
+}
 /*函数*/
 @mixin backPosition($val1,$val2){
   background-position: $val1 $val2;
