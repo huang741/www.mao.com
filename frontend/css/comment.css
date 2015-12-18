@@ -217,6 +217,23 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
   margin-left: 10px;
 }
 
+.w660 {
+  width: 660px;
+}
+
+.w300 {
+  width: 300px;
+  margin-left: 40px;
+}
+
+.w750 {
+  width: 750px;
+}
+
+.w240 {
+  width: 240px;
+}
+
 .page {
   display: table;
   margin: 10px auto;
@@ -279,6 +296,15 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
   line-height: 36px;
   background-color: #1ca7f4;
   color: #fff;
+}
+.panel .info .info-btned {
+  margin-top: 10px;
+}
+.panel .info .favorite {
+  margin-top: 25px;
+}
+.panel .info .favorite i {
+  margin-right: 5px;
 }
 .panel .groom li {
   position: relative;

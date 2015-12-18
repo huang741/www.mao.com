@@ -57,3 +57,23 @@ var paySelect=function(){
     });
 }
 /*立即支付选择平台*/
+
+/*方案商企业-店铺*/
+var companyShow=function(){
+    $(".com-head li").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        var index = $(this).index();
+        $(".com-list .com-ul").eq(index).addClass("active").siblings().removeClass("active");
+    });
+}
+/*方案商企业-店铺*/
+
+/*召集令---展示列表*/
+var callupShow=function(){
+    $("#sideMenu li").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        var index = $(this).index();
+        $("#sideCon ul").eq(index).addClass("active").siblings().removeClass("active");
+    });
+}
+/*召集令---展示列表*/
