@@ -234,6 +234,14 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
   width: 240px;
 }
 
+.w500 {
+  width: 500px;
+}
+
+.w340 {
+  width: 340px;
+}
+
 .page {
   display: table;
   margin: 10px auto;

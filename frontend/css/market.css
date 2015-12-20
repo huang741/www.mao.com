@@ -149,7 +149,22 @@
   background-color: #f9671e;
 }
 
-
+.page {
+  display: table;
+  margin: 10px auto;
+}
+.page li {
+  float: left;
+  padding: 5px 8px;
+  margin: 0 3px;
+}
+.page li.active {
+  background-color: #999;
+  border-radius: 6px;
+}
+.page li.active a {
+  color: #fff;
+}
 
 .marketll .r {
   width: 240px;
