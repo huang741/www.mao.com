@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/*需求评估书*/
+.assess {
+  font-size: 14px;
+}
+.assess .assess-list {
+  margin-bottom: 20px;
+}
+.assess .assess-list .name {
+  display: inline-block;
+  width: 130px;
+  padding-right: 5px;
+  text-align: right;
+}
+.assess .assess-list .nameed {
+  vertical-align: top;
+}
+.assess .assess-list .assess-text {
+  width: 200px;
+  height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.assess .assess-list .assess-textlen {
+  width: 410px;
+}
+.assess .assess-list .assess-textshort {
+  width: 100px;
+}
+.assess .assess-list .assess-texted {
+  width: 280px;
+}
+.assess .assess-list .assess-select {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 32px;
+  width: 150px;
+  text-align: center;
+}
+.assess .assess-list .assess-textarea {
+  width: 410px;
+  height: 80px;
+  resize: none;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.assess .assess-list label {
+  margin-right: 30px;
+}
+.assess .assess-list .assess-a {
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  width: 120px;
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 5px;
+}
+.assess .assess-list .assess-file {
+  position: absolute;
+  opacity: 0;
+  height: 32px;
+  width: 120px;
+}
+.assess .assess-list .explan {
+  margin-left: 135px;
+  margin-top: 15px;
+  width: 410px;
+  line-height: 23px;
+}
+.assess .assess-list .assess-btn {
+  display: inline-block;
+  background-color: #009ffa;
+  color: #fff;
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+/*需求评估书*/
+/*提交投诉*/
+.complain .title {
+  font-size: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+.complain .complain-con {
+  padding: 20px;
+}
+
+.complain-con {
+  font-size: 14px;
+}
+.complain-con .complain-list {
+  margin-bottom: 20px;
+}
+.complain-con .complain-list .name {
+  width: 110px;
+  text-align: right;
+  padding-right: 5px;
+  display: inline-block;
+}
+.complain-con .complain-list .name em {
+  color: #ff1313;
+}
+.complain-con .complain-list .nameed {
+  vertical-align: top;
+}
+.complain-con .complain-list .com-text {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 35px;
+  width: 410px;
+  resize: none;
+}
+.complain-con .complain-list .com-texted {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 35px;
+  width: 200px;
+  resize: none;
+  margin-right: 10px;
+}
+.complain-con .complain-list .com-textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 98px;
+  width: 410px;
+  resize: none;
+}
+.complain-con .complain-list .com-textshort {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 35px;
+  width: 288px;
+  resize: none;
+}
+.complain-con .complain-list .com-a {
+  position: relative;
+  display: inline-block;
+  height: 35px;
+  width: 120px;
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 5px;
+}
+.complain-con .complain-list .com-file {
+  position: absolute;
+  opacity: 0;
+  height: 35px;
+  width: 120px;
+}
+.complain-con .complain-list .explan {
+  margin-left: 115px;
+  margin-top: 15px;
+  width: 410px;
+  line-height: 23px;
+}
+.complain-con .complain-list .a-btn {
+  display: inline-block;
+  background-color: #009ffa;
+  color: #fff;
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+.complain-con .complain-list .a-btned {
+  display: inline-block;
+  background-color: #009ffa;
+  color: #fff;
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin-left: 15px;
+}
+
+/*提交投诉*/
+/*商品评论（卖方发表）*/
+.seller {
+  font-size: 14px;
+}
+
+.seller .left-menu {
+  width: 120px;
+  border: 1px solid #ddd;
+}
+.seller .left-menu li {
+  padding: 10px;
+  text-align: center;
+}
+.seller .left-menu li.active a {
+  color: #fbae94;
+}
+
+.seller .right-con {
+  font-size: 14px;
+  margin-left: 20px;
+  width: 858px;
+}
+.seller .right-con .title {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+}
+.seller .right-con .seller-con {
+  padding: 20px;
+}
+.seller .right-con .seller-con > div {
+  margin-bottom: 20px;
+}
+.seller .right-con .seller-con > div .name {
+  width: 80px;
+  display: inline-block;
+  padding-right: 5px;
+  text-align: right;
+}
+.seller .right-con .seller-con > div .nameed {
+  vertical-align: top;
+}
+.seller .right-con .seller-con > div em {
+  color: #ff1313;
+}
+.seller .right-con .seller-con > div i {
+  color: #f9671e;
+  margin-right: 10px;
+}
+.seller .right-con .seller-con .seller-textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 100px;
+  width: 410px;
+  resize: none;
+}
+.seller .right-con .seller-con label {
+  margin-right: 20px;
+}
+
+/*商品评论（卖方发表）*/

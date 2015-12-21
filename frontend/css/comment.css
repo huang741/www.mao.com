@@ -242,6 +242,16 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
   width: 340px;
 }
 
+.a-btn {
+  display: inline-block;
+  background-color: #009ffa;
+  color: #fff;
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
 .page {
   display: table;
   margin: 10px auto;
