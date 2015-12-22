@@ -244,3 +244,717 @@
 }
 
 /*商品评论（卖方发表）*/
+/*bug表单*/
+.bugForm {
+  font-size: 14px;
+}
+
+.bugForm .bug-list {
+  padding-bottom: 20px;
+}
+
+.bugForm .bug-name {
+  width: 80px;
+  display: inline-block;
+  text-align: right;
+}
+
+.bugForm .bug-input {
+  width: 400px;
+  height: 28px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.bugForm .bug-select {
+  width: 120px;
+  height: 28px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.bugForm .bug-file {
+  width: 290px;
+  height: 28px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.bugForm .bug-textarea {
+  width: 400px;
+  height: 100px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  resize: none;
+  margin-left: 5px;
+}
+
+.bugForm .btn-file {
+  width: 100px;
+  height: 28px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.bugForm .btn-span {
+  width: 100px;
+  height: 32px;
+  background-color: #999999;
+  border: 1px solid #DDDDDD;
+  color: #fff;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: -100px;
+}
+
+.bugForm .t-tetx {
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.bugForm .bug-btn {
+  width: 150px;
+  height: 32px;
+  border: 0;
+  background-color: #1CA7F4;
+  margin-right: 10px;
+  color: #FFFFFF;
+  margin-left: 5px;
+}
+
+/*bug表单*/
+/*创建memo*/
+.setMemo {
+  background-color: #7d6a6a;
+  font-size: 14px;
+}
+
+.setMemo .memo-title {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.setMemo .memo-list {
+  padding-bottom: 20px;
+}
+
+.setMemo .memo-name {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.setMemo .memo-input {
+  width: 400px;
+  height: 28px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.setMemo .w-input {
+  width: 200px;
+}
+
+.setMemo .memo-select {
+  width: 120px;
+  height: 30px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.setMemo .memo-date {
+  margin-left: 5px;
+  color: #FFFFFF;
+}
+
+.setMemo .memo-textarea {
+  width: 600px;
+  height: 300px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  margin-left: 5px;
+  resize: none;
+}
+
+.setMemo .m-top {
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.setMemo .memo-file {
+  width: 300px;
+  height: 28px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.setMemo .btn-file {
+  width: 120px;
+  height: 28px;
+  opacity: 0;
+}
+
+.setMemo .file-span {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: -120px;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+}
+
+.setMemo .memo-btn {
+  width: 150px;
+  height: 32px;
+  border: 0;
+  background-color: #1CA7F4;
+  margin-right: 10px;
+  color: #FFFFFF;
+  margin-left: 5px;
+}
+
+.setMemo .l-top {
+  margin-top: 20px;
+}
+
+/*创建memo*/
+/*创建定制类项目需求书-资金模式*/
+.fundMode {
+  font-size: 12px;
+}
+
+.fundMode .fund-ul {
+  margin-left: 180px;
+  margin-top: 140px;
+}
+
+.fundMode .fund-ul li {
+  float: left;
+  margin-right: 80px;
+}
+
+.fundMode .fund-ul li a {
+  font-size: 16px;
+  padding: 3px;
+}
+
+.fundMode .fund-ul li:nth-of-type(3) a {
+  display: block;
+  color: #f9671e;
+  border-bottom: 2px solid #f9671e;
+}
+
+.fundMode .fund-title {
+  font-size: 16px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.fundMode .fund-list {
+  padding-bottom: 20px;
+  padding-left: 120px;
+}
+
+.fundMode .fund-l-span {
+  margin-left: 5px;
+}
+
+.fundMode .fund-r-span {
+  color: #999999;
+  margin-left: 50px;
+}
+
+.fundMode .checkbox-span {
+  color: #1CA7F4;
+}
+
+.fundMode .fund-select {
+  width: 120px;
+  height: 28px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.fundMode .fund-input {
+  width: 120px;
+  height: 28px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.fundMode .fund-btn {
+  width: 150px;
+  height: 32px;
+  border: 0;
+  background-color: #1CA7F4;
+  margin-right: 10px;
+  color: #FFFFFF;
+}
+
+/*创建定制类项目需求书-资金模式*/
+/*创建结案书*/
+.closingBook {
+  background-color: #7d6a6a;
+  font-size: 14px;
+}
+
+.closingBook .book-title {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.closingBook .book-list {
+  padding-bottom: 20px;
+}
+
+.closingBook .book-name {
+  width: 150px;
+  text-align: right;
+  display: inline-block;
+  color: #FFFFFF;
+}
+
+.closingBook .book-input {
+  width: 200px;
+  height: 28px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.closingBook .w-input {
+  width: 400px;
+}
+
+.closingBook .book-r-span {
+  margin-left: 140px;
+  color: #FFFFFF;
+}
+
+.closingBook .date-span {
+  margin-left: 5px;
+  color: #FFFFFF;
+}
+
+.closingBook .book-textarea {
+  width: 600px;
+  height: 300px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  resize: none;
+  margin-left: 5px;
+}
+
+.closingBook .b-top {
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.closingBook .book-file {
+  width: 300px;
+  height: 28px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.closingBook .btn-file {
+  width: 120px;
+  height: 28px;
+  opacity: 0;
+}
+
+.closingBook .file-span {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: -120px;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+}
+
+.closingBook .book-btn {
+  width: 150px;
+  height: 32px;
+  border: 0;
+  background-color: #1CA7F4;
+  margin-right: 10px;
+  color: #FFFFFF;
+  margin-left: 5px;
+}
+
+/*创建结案书*/
+/*创建项目进度表*/
+.schedule .schedule-list {
+  padding-bottom: 30px;
+}
+
+.schedule .s-top {
+  margin-top: 100px;
+}
+
+.schedule .schedule-span {
+  display: inline-block;
+  width: 5px;
+  height: 12px;
+  background-color: #f9671e;
+  margin-left: 5px;
+}
+
+.schedule .schedule-name {
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.schedule .schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-color: #000000;
+}
+
+.schedule .schedule-tr {
+  background-color: #f0f0f0;
+  height: 32px;
+}
+
+.schedule td {
+  border: 1px solid #DDDDDD;
+  text-align: center;
+  width: 145px;
+}
+
+.schedule .table-tr {
+  height: 56px;
+}
+
+.schedule .table-tr td {
+  color: #555555;
+}
+
+.schedule .list-list {
+  padding-bottom: 20px;
+}
+
+.schedule .list-list .s-name {
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #999999;
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.schedule .list-list .s-t {
+  font-size: 36px;
+  color: #999999;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+}
+
+.schedule .list-list .s-w {
+  margin-left: 60px;
+}
+
+.schedule .list-list .p-c {
+  background-color: #50cb65;
+}
+
+.schedule .list-list .y-c {
+  background-color: #4ab4f7;
+}
+
+.schedule .list-list p {
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.schedule .list-list .work-name {
+  width: 300px;
+  display: inline-block;
+  text-align: left;
+}
+
+.schedule .list-list .work-show {
+  width: 10px;
+  height: 10px;
+  background-color: #999999;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.schedule .list-list p .p-c {
+  background-color: #50cb65;
+}
+
+.schedule .list-list p .y-c {
+  background-color: #4ab4f7;
+}
+
+/*创建项目进度表*/
+/*创建支付节点*/
+.setPayment .payment-list {
+  margin-top: 120px;
+}
+
+.setPayment .payment-list p {
+  padding-bottom: 10px;
+}
+
+.setPayment b {
+  margin: 6px;
+  font-weight: 100;
+}
+
+.setPayment .payment-list .payment-btn {
+  width: 120px;
+  height: 32px;
+  border: 0;
+  background-color: #1CA7F4;
+  color: #FFFFFF;
+  margin-right: 300px;
+}
+
+.share {
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.payment-form {
+  width: 1000px;
+  background-color: #7d6a6a;
+  position: absolute;
+  top: 50%;
+  margin-top: -230px;
+  left: 50%;
+  margin-left: -500px;
+  display: none;
+}
+
+.payment-form .form-list {
+  padding-bottom: 20px;
+}
+
+.payment-form .payment-title {
+  font-size: 16px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.payment-form .payment-name {
+  width: 150px;
+  text-align: right;
+  display: inline-block;
+}
+
+.payment-form span {
+  color: #FFFFFF;
+}
+
+.payment-form .payment-input {
+  width: 200px;
+  height: 28px;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.payment-form .blank {
+  margin: 0px;
+  margin-left: 24px;
+}
+
+.payment-form .payment-btn {
+  width: 120px;
+  height: 28px;
+  border: 0;
+  background-color: #1CA7F4;
+  color: #FFFFFF;
+  margin-left: 5px;
+}
+
+.payment-form .f-last {
+  padding-bottom: 200px;
+}
+
+/*创建支付节点*/
+/*创建定制类项目需求书-需求详情*/
+.demand {
+  padding-top: 120px;
+  font-size: 14px;
+}
+.demand .demand-head li {
+  float: left;
+  width: 165px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+.demand .demand-head li.active {
+  border-bottom: 2px solid #fc6303;
+}
+.demand .demand-head li.active a {
+  color: #fc6303;
+}
+
+.demand-list .title {
+  font-size: 20px;
+  padding: 20px 0;
+}
+.demand-list .titled {
+  text-align: center;
+  color: #f9671e;
+  padding-bottom: 30px;
+}
+.demand-list .con .con-list {
+  margin-bottom: 20px;
+}
+.demand-list .con .name {
+  display: inline-block;
+  width: 115px;
+  padding-right: 10px;
+  text-align: right;
+}
+.demand-list .con .nameed {
+  vertical-align: top;
+}
+.demand-list .con .namec {
+  color: #f9671e;
+}
+.demand-list .con .textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 75px;
+  width: 410px;
+  resize: none;
+  padding: 5px;
+}
+.demand-list .con .select {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 35px;
+  width: 200px;
+  resize: none;
+  text-align: center;
+}
+.demand-list .con .text {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 35px;
+  width: 200px;
+  resize: none;
+}
+.demand-list .con .textlen {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 35px;
+  width: 410px;
+  resize: none;
+}
+.demand-list .con .selected {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 35px;
+  width: 410px;
+  resize: none;
+}
+.demand-list .con .explan {
+  margin-left: 120px;
+  font-size: 12px;
+  color: #a9a9a9;
+  margin-top: 10px;
+}
+.demand-list .con .explaned {
+  color: #333;
+  margin-left: 125px;
+}
+.demand-list .con .notsee {
+  color: #1ca7f4;
+  font-size: 12px;
+}
+.demand-list .con .textshort {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 35px;
+  width: 200px;
+  resize: none;
+  margin-right: 15px;
+}
+.demand-list .con .file {
+  width: 195px;
+  height: 35px;
+  opacity: 0;
+}
+.demand-list .con .add {
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 35px;
+  width: 185px;
+  resize: none;
+  line-height: 35px;
+  display: inline-block;
+  margin-left: -195px;
+  border: 0;
+}
+.demand-list .con label {
+  margin-right: 20px;
+}
+.demand-list .con .dimg {
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+}
+.demand-list .con .sub-title {
+  margin-bottom: 20px;
+}
+.demand-list .con .sub-title span {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  width: 100px;
+}
+.demand-list .con .sub-titled {
+  color: #fc6303;
+}
+
+/*创建定制类项目需求书-需求详情*/

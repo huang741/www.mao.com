@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建支付节点</title>
+    <link rel="stylesheet" href="../../css/comment.css">
+    <link rel="stylesheet" href="../../css/inventory.css" />
+</head>
+<body>
+<div class="container">
+	<div class="setPayment">
+		<div class="payment-list">
+			<p>项目名称：医疗B超机项目开发</p>
+			<p>付<b>款</b>方：深圳市美的科技有限公司</p>
+			<p>收<b>款</b>方：深圳市美的科技有限公司</p>
+			<p>项目总额：15000.00</p>
+			<p>节点明细</p>
+		</div>
+		<div class="payment-list">
+			<input type="button" class="payment-btn" value="共享给合作伙伴" />
+			<input type="button" class="payment-btn" value="创建新的支付节点" onclick="showShare()" />
+		</div>
+    </div>
+</div>
+
+<div class="share"></div>
+<div class="payment-form">
+	<form>
+		<h3 class="payment-title">创建支付节点</h3>
+		<div class="form-list">
+			<span class="payment-name">项目名称</span><span>：</span><span>医疗B超机项目开发</span>
+		</div>
+		<div class="form-list">
+			<span class="payment-name">付<b>款</b>方</span><span>：</span><span>医疗B超机项目开发</span>
+		</div>
+		<div class="form-list">
+			<span class="payment-name">项目总额</span><span>：</span><span>16000</span>
+		</div>
+		<div class="form-list">
+			<span class="payment-name">节点名称</span>
+			<input type="text" class="payment-input" value="  预付款" />
+		</div>
+		<div class="form-list">
+			<span class="payment-name">资金比列</span>
+			<input type="text" class="payment-input" value="  30%" />
+		</div>
+		<div class="form-list">
+			<span class="payment-name">资金数额</span><span>：</span><span>4500.00</span>
+		</div>
+		<div class="form-list">
+			<span class="payment-name">大<b class="blank">写</b></span><span>：</span><span>人民币肆仟伍佰元整</span>
+		</div>
+		<div class="form-list f-last">
+			<span class="payment-name">&nbsp;</span>
+			<input type="button" class="payment-btn" value="保存" />
+		</div>
+	</form>
+</div>
+<script src="../../js/jquery.js"></script>
+<script>
+  function showShare(){
+	  $(".share").show();
+	  $(".payment-form").show();
+  }
+  $(".share").click(function () {
+	  $(".share").hide();
+	  $(".payment-form").hide();
+  })
+</script>
+</body>
+</html>
