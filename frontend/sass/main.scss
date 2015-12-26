@@ -8,6 +8,9 @@
     font-size: 24px;
     font-weight: 500;
   }
+  .re-titled{
+    margin-bottom: 40px;
+  }
   .type{
     padding: 20px 0;
     text-align: center;
@@ -55,7 +58,7 @@
   .form-text{
     border: 1px solid #ddd;
     height: 34px;
-    padding-left: 3px;
+    padding-left: 8px;
     width: 136px;
     border-radius: 5px;
   }
@@ -161,9 +164,13 @@
   }
 }
 .owner{
+  .name,.owner-text{
+    display: table-cell;
+  }
   .form-text{
-    margin-right: 9px;
-    &:last-child{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    &:nth-of-type(5n){
       margin-right: 0;
     }
   }
@@ -171,6 +178,10 @@
      padding-left: 105px;
     margin-top: 10px;
     color: #fc6303;
+    span{
+      color: #999;
+      margin-left: 20px;
+    }
   }
 }
 .brandul{
@@ -278,6 +289,7 @@
 /*注册成功跳转*/
 .skip{
   padding: 60px;
+  min-height: 300px;
   .td{
     float: left;
   }
@@ -302,7 +314,7 @@
       width: 160px;
       text-align: center;
       height: 32px;
-      border: 1px solid #ccc;
+      border: 1px solid #999;
       line-height: 32px;
       background-color: #e5e5e5;
       margin-right: 10px;
@@ -679,3 +691,38 @@
   margin: 30px auto 0;
 }
 /*购买订单*/
+
+/*选择注册类型*/
+.registerKind{
+  padding-top: 40px;
+  min-height: 400px;
+}
+.registerKind .float-l{
+  margin-left: 80px;
+}
+.registerKind .float-r{
+  margin-right: 80px;
+}
+.registerKind .kind-title{
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.registerKind .kind-text{
+  width: 350px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.registerKind p{
+  margin-top: 20px;
+}
+.registerKind .kind-btn{
+  width: 150px;
+  height: 32px;
+  background-color: #1CA7F4;
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 14px;
+  text-align: center;
+  line-height: 32px;
+}
+/*选择注册类型*/
