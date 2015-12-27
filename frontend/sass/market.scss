@@ -23,15 +23,21 @@
   margin-top: 20px;
   font-size: 14px;
 }
+.market_top .item .name{
+  color: #999;
+}
 .market_top .item span{
   padding: 10px;
 }
 .selected{
   color: orangered !important;
 }
+.market-coned{
+  margin-top: 15px;
+}
 .market-con .title{
   margin: 15px 0;
-  font-size: 26px;
+  font-size: 24px;
 }
 .marketll .l{
   width: 750px;
@@ -39,14 +45,28 @@
 .marketll .sort{
   border-bottom: 1px solid #ddd;
   position: relative;
-  padding-bottom: 5px;
+  line-height: 30px;
+  padding-bottom: 15px;
 }
 .marketll .sort li{
   float: left;
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 .marketll .sort li i{
   margin-left: 3px;
+}
+.marketll .sort li.li-title{
+  color: #555;
+  font-size: 20px;
+  padding-left: 0;
+}
+.marketll .sort li.li-address {
+  background-color: #b3b3b3;
+  border-radius: 5px;
+  color: #fff;
+}
+.marketll .sort li.li-address i {
+  margin-right: 5px;
 }
 .marketll .sort li.last-li{
   position: absolute;
@@ -82,12 +102,13 @@
 }
 .marketll .list li .content{
   line-height: 20px;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 10px;
   color: #555;
 }
 .marketll .list li .deputy{
-  color: #b6b6b6;
+  color: #999;
+  font-size: 12px;
 }
 .marketll .list li .deputy span{
   margin-right: 10px;
@@ -100,7 +121,7 @@
   text-align: center;
   vertical-align: middle;
   color: #ff2828;
-  font-size: 16px;
+  font-size: 20px;
 }
 .marketll .list li .three{
   width: 44px;
@@ -170,13 +191,11 @@
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
     .money{
-      color: #f9671e;
+      color: #ff6325;
       margin-bottom: 10px;
     }
     .explain{
       margin-bottom: 10px;
-      font-size: 14px;
-      line-height: 20px;
     }
     .tail{
       color: #b6b6b6;
@@ -241,15 +260,15 @@
 .skillDetail{
   margin-top: 40px;
   .l{
-    width: 680px;
+    width: 660px;
     .skill-l-two{
       margin-top: 30px;
       border: 1px solid #ddd;
     }
   }
   .r{
-    width: 310px;
-    margin-left: 10px;
+    width: 300px;
+    margin-left: 40px;
   }
 }
 .skill-l-one{
@@ -271,8 +290,8 @@
     }
   }
   .property{
-    margin-left: 30px;
-    width: 310px;
+    margin-left: 40px;
+    width: 380px;
   }
 }
 .reading .sub-img li{
@@ -285,12 +304,12 @@
   width: 50px;
 }
 .property .p-title{
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 .property .p-price{
   background-color: #ebeded;
-  padding: 10px 5px;
+  padding: 14px 10px;
   margin-bottom: 15px;
   span{
     color: #fe3f3f;
@@ -427,8 +446,9 @@
           margin-bottom: 10px;
           font-size: 14px;
         }
-        p{
-          color: #a9a9a9;
+        p.price{
+          color: #ff2828;
+          font-size: 12px;
         }
       }
     }
@@ -452,11 +472,12 @@
   float: left;
   margin-left: 13px;
   h2{
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 15px;
   }
   p{
     color: #747474;
+    font-size: 12px;
     em{
       padding: 0 10px;
       color: #ddd;
@@ -473,8 +494,12 @@
   border-right: 1px solid #ddd;
 }
 .need-center .l h2{
-  font-size: 14px;
-  margin-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.need-center .l .price{
+  color: #f9671e;
+  font-size: 20px;
 }
 .need-center .l .money{
   font-size: 18px;
@@ -483,10 +508,25 @@
 }
 .need-center .l .explain{
   margin-bottom: 30px;
+  margin-top: 36px;
   p{
     line-height: 20px;
     &.budget{
       color: #fc6303;
+    }
+  }
+}
+.need-center .l .star{
+  span{
+    background-color: #f9671e;
+    border-radius: 50%;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+    i{
+      color: #fff;
     }
   }
 }

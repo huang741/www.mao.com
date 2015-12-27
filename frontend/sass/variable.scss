@@ -15,3 +15,14 @@
   width: $widthSize;
   resize: none;
 }
+@mixin opacity($size){
+  filter:alpha(opacity=$size*100);
+  -moz-opacity:$size;
+  opacity:$size;
+}
+@mixin linear-gradient($color,$colored){
+  background: -webkit-linear-gradient($color, $colored);
+  background: -o-linear-gradient($color, $colored);
+  background: -moz-linear-gradient($color, $colored);
+  background: linear-gradient($color, $colored);
+}

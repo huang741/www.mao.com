@@ -77,3 +77,20 @@ var callupShow=function(){
     });
 }
 /*召集令---展示列表*/
+
+/*产品对比*/
+var productContrast=function(){
+    $(".ware li .db").click(function(){
+       $(".share").addClass("show");
+       $(".product-share").addClass("show");
+    });
+    $(".share").click(function(){
+       $(".share").removeClass("show");
+       $(".product-share").removeClass("show");
+    });
+    $(".product-share .close").click(function(){
+        $(".share").removeClass("show");
+        $(".product-share").removeClass("show");
+    });
+}
+/*产品对比*/

@@ -13,33 +13,45 @@
   width: 370px;
 }
 
+.selectul {
+  margin-top: 30px;
+  padding: 0 20px;
+}
+.selectul li {
+  float: left;
+  padding: 10px;
+}
+.selectul li.active {
+  border-bottom: 2px solid #fb3c3c;
+}
+
 .menuList {
-  margin: 15px 0;
-  font-size: 14px;
+  background-color: #f7f7f7;
+  padding: 20px;
 }
 .menuList .tr {
-  padding: 5px 0;
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 18px;
 }
 .menuList .tr .name {
   font-weight: 500;
   display: inline-block;
-  width: 108px;
-  padding-left: 10px;
+  width: 82px;
 }
 .menuList .tr span {
   display: inline-block;
-  padding: 10px;
-  margin-right: 10px;
+  margin-right: 16px;
 }
 .menuList .tr span.active {
-  color: #fc6303;
+  color: #f9671e;
+  font-weight: 600;
 }
 .menuList .tr .more {
   color: #a7a7a7;
+  text-decoration: underline;
 }
-.menuList .tr .more a {
-  color: #a7a7a7;
+
+.productList {
+  margin-top: 20px;
 }
 
 .ulMenu {
@@ -60,34 +72,43 @@
 }
 
 .framed .sort {
-  border-bottom: 1px solid #ddd;
   position: relative;
-  padding-bottom: 5px;
+  line-height: 30px;
 }
 
 .framed .sort li {
   float: left;
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 
 .framed .sort li i {
   margin-left: 3px;
 }
 
-.framed .sort li.first-li {
+.framed .sort li.li-title {
+  font-size: 24px;
+  color: #555;
+  font-weight: 600;
+  padding-left: 0;
+}
+
+.framed .sort li.li-address {
   background-color: #b3b3b3;
   color: #fff;
-  border-radius: 8px;
+  border-radius: 5px;
 }
-.framed .sort li.first-li i {
+.framed .sort li.li-address i {
   margin-right: 5px;
   font-size: 14px;
 }
 
 .listCon {
-  padding: 10px 0;
-  border: 1px solid #ddd;
-  border-top: 0;
+  margin: 20px 0;
+}
+.listCon .ware {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
 }
 .listCon .ware li {
   padding: 10px;
@@ -106,8 +127,9 @@
   height: 148px;
 }
 .listCon .ware li .money {
-  color: #FF0000;
+  color: #ea3030;
   margin: 10px 0;
+  font-size: 18px;
 }
 .listCon .ware li .title {
   line-height: 20px;
@@ -164,22 +186,29 @@
   color: #3d92ef;
 }
 
+.product-side .panel .panel-body {
+  padding: 0;
+}
+
 .product-side .p-side-con {
   display: none;
+  padding: 0 20px;
 }
 .product-side .p-side-con.active {
   display: block;
 }
 
 .p-side-con li {
-  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
 }
-.p-side-con li .times {
-  text-align: right;
-  color: #989898;
+.p-side-con li .p-price {
+  color: #ea3030;
+  font-size: 18px;
 }
 .p-side-con li:last-child {
   margin-bottom: 0;
+  border-bottom: 0;
 }
 
 /*产品列表*/
@@ -188,15 +217,15 @@
   margin-top: 40px;
 }
 .skillDetail .l {
-  width: 680px;
+  width: 660px;
 }
 .skillDetail .l .skill-l-two {
   margin-top: 30px;
   border: 1px solid #ddd;
 }
 .skillDetail .r {
-  width: 310px;
-  margin-left: 10px;
+  width: 300px;
+  margin-left: 40px;
 }
 
 .skill-l-one .reading .big-img {
@@ -215,8 +244,8 @@
   height: 50px;
 }
 .skill-l-one .property {
-  margin-left: 30px;
-  width: 310px;
+  margin-left: 40px;
+  width: 380px;
 }
 
 .reading .sub-img li {
@@ -231,7 +260,7 @@
 }
 
 .property .p-title {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
@@ -248,13 +277,13 @@
 
 .property .p-price {
   background-color: #ebeded;
-  padding: 10px 5px;
+  padding: 10px;
   margin-bottom: 15px;
 }
 .property .p-price span {
-  color: #fe3f3f;
+  color: #ff2828;
   margin-left: 25px;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -276,7 +305,7 @@
   background-color: #f9671e;
   color: #fff;
   width: 200px;
-  height: 50px;
+  height: 48px;
   line-height: 50px;
   font-size: 14px;
 }
@@ -290,12 +319,14 @@
   border-top: 3px solid #fafafa;
   width: 105px;
   text-align: center;
+  color: #999;
 }
 .skill-l-two .t-head li:first-child {
   border-right: 1px solid #ddd;
 }
 .skill-l-two .t-head li.active {
   border-top: 3px solid #f9671e;
+  color: #333;
 }
 .skill-l-two .t-detail {
   padding: 10px;
@@ -311,3 +342,90 @@
 }
 
 /*产品详情*/
+/*产品对比*/
+.product-share {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 816px;
+  height: 240px;
+  position: fixed;
+  top: 50%;
+  margin-top: -120px;
+  left: 50%;
+  margin-left: -408px;
+  background-color: #fff;
+  display: none;
+}
+.product-share .title {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+}
+.product-share .title .contrast {
+  color: #009ffa;
+  margin-right: 20px;
+}
+.product-share .product-s-ul {
+  margin-top: 15px;
+}
+.product-share .product-s-ul li {
+  width: 180px;
+  margin-right: 22px;
+  margin-bottom: 10px;
+  float: left;
+}
+.product-share .product-s-ul li:nth-of-type(4n) {
+  margin-right: 0;
+}
+.product-share .product-s-ul .img img {
+  width: 180px;
+  height: 120px;
+  display: block;
+}
+.product-share .product-s-ul .price {
+  color: #ea3030;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/*产品对比*/
+/*产品对比详情*/
+.return {
+  margin: 30px 0 20px;
+  text-align: center;
+}
+.return a {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.contrast-table td {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  text-align: center;
+  height: 80px;
+  padding: 10px 20px;
+}
+.contrast-table td:last-child {
+  border-right: 1px solid #ddd;
+}
+.contrast-table td .img {
+  width: 180px;
+  height: 120px;
+}
+.contrast-table td p {
+  text-align: left;
+}
+.contrast-table td .price {
+  color: #ea3030;
+  font-size: 18px;
+}
+.contrast-table tr:last-child td {
+  border-bottom: 1px solid #ddd;
+}
+.contrast-table .name {
+  width: 100px;
+}
+
+/*产品对比详情*/

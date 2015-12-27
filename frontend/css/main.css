@@ -531,8 +531,28 @@
 }
 .pay-buy .addressList .amend {
   position: absolute;
-  right: 50px;
+  right: 40px;
   top: 5px;
+  color: #999;
+  border-bottom: 1px solid #999;
+}
+.pay-buy .addressList .edit .case {
+  border: 1px solid #ccc;
+  padding-left: 15px;
+}
+.pay-buy .addressList .add .add-text {
+  width: 780px;
+  height: 35px;
+  border: 1px solid #ddd;
+  padding-left: 15px;
+}
+.pay-buy .addressList .no {
+  line-height: 80px;
+  color: #999;
+}
+.pay-buy .addressList .no a {
+  margin-left: 20px;
+  text-decoration: underline;
   color: #999;
 }
 .pay-buy .addressList .last-li {

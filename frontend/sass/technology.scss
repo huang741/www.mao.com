@@ -1,28 +1,49 @@
 @charset "utf-8";
+@import "variable";
 /*关于我们*/
+.company-menu{
+  height: 48px;
+  margin-top: 20px;
+  @include linear-gradient(#fe5353,#fb3e3e);
+  li{
+    float: left;
+    &.active{
+      background-color: #d82f2f;
+    }
+    a{
+      color: #fff;
+      display: block;
+      line-height: 48px;
+      padding: 0 25px;
+      i{
+        margin-right: 10px;
+      }
+    }
+  }
+}
 .about{
   width: 1000px;
   margin: 0 auto;
   padding-top: 20px;
 }
 .about .banner{
-  background-color: rgba(34, 31, 23, 0.36);
-  width: 100%;
-  height: 250px;
+
+  img{
+    width: 100%;
+    height: 250px;
+  }
 }
 .about .content{
   margin-top: 20px;
 }
 .about .content .title{
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   padding: 10px;
 }
 .about .content .description{
   border-top: solid 1px #989898;
-  font-size: 14px;
   padding: 10px;
-  line-height: 20px;
 }
 .about .content .description p{
   padding-top: 10px;
@@ -34,25 +55,29 @@
   margin-top: 20px;
   .case-con{
     padding: 20px;
-    line-height: 20px;
-    font-size: 14px;
+    .case-con-title{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
   }
 }
 .caselist .caselist-head{
-  font-size: 20px;
+  font-size: 24px;
   padding-left: 10px;
   padding-bottom: 15px;
   border-bottom: 1px solid #ddd;
 }
 .caselist .caselist-ul{
-  padding: 20px 25px;
+  padding: 20px 80px;
 }
 .caselist-ul li{
   width: 170px;
+  height: 220px;
+  overflow: hidden;
   float: left;
   margin-right: 50px;
   margin-bottom: 20px;
-  &:nth-of-type(3n){
+  &:nth-of-type(4n){
     margin-right: 0;
   }
   .case-li-img{
@@ -62,11 +87,8 @@
   }
   .title{
     margin-top: 10px;
-    font-size: 14px;
-    height: 28px;
     overflow: hidden;
-    //text-overflow: ellipsis;
-    //white-space: nowrap;
+    height: 40px;
   }
 }
 /*案例列表*/
@@ -75,15 +97,15 @@
 .skillDetail{
   margin-top: 40px;
   .l{
-    width: 680px;
+    width: 660px;
     .skill-l-two{
       margin-top: 30px;
       border: 1px solid #ddd;
     }
   }
   .r{
-    width: 310px;
-    margin-left: 10px;
+    width: 300px;
+    margin-left: 40px;
   }
 }
 .skill-l-one{
@@ -105,8 +127,8 @@
     }
   }
   .property{
-    margin-left: 30px;
-    width: 310px;
+    margin-left: 40px;
+    width: 380px;
   }
 }
 .reading .sub-img li{
@@ -119,7 +141,7 @@
   width: 50px;
 }
 .property .p-title{
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 .property .p-explain{
@@ -134,12 +156,12 @@
 }
 .property .p-price{
   background-color: #ebeded;
-  padding: 10px 5px;
+  padding: 10px;
   margin-bottom: 15px;
   span{
-    color: #fe3f3f;
+    color: #ff2828;
     margin-left: 25px;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
   }
 }
@@ -160,7 +182,7 @@
   background-color: #f9671e;
   color: #fff;
   width: 200px;
-  height: 50px;
+  height: 48px;
   line-height: 50px;
   font-size: 14px;
 }
@@ -169,15 +191,17 @@
     border-bottom: 1px solid #ddd;
     li {
       float: left;
-      padding: 10px 20px;
+      padding: 10px 0;
       border-top: 3px solid #fafafa;
+      width: 105px;
       text-align: center;
-      border-right: 1px solid #ddd;
-      &:last-child {
-        border-right: 0;
+      color: #999;
+      &:first-child {
+        border-right: 1px solid #ddd;
       }
       &.active {
         border-top: 3px solid #f9671e;
+        color: #333;
       }
     }
   }
@@ -204,30 +228,123 @@
   }
 }
 .productCore .bigbanner{
-  height: 280px;
-  background-color: #ccc;
+  img{
+    height: 280px;
+    width: 100%;
+  }
+}
+.productCore-con{
+  .title{
+    padding-bottom: 20px;
+    font-size: 24px;
+  }
+  .head-menu-ul{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    li{
+      float: left;
+      padding: 0 15px;
+      &.active{
+        color: #f9671e;
+        font-weight: 600;
+      }
+    }
+  }
+  .productCore-list{
+    padding: 0 10px;
+    li{
+      float: left;
+      width: 180px;
+      margin: 20px 20px 0 0;
+      &:nth-of-type(5n){
+        margin-right: 0;
+      }
+      .c-img{
+        display: block;
+        width: 180px;
+        height: 120px;
+      }
+      .c-price{
+        color: #ea3030;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10px 0;
+      }
+      .c-title{
+        height: 40px;
+        overflow: hidden;
+      }
+    }
+  }
 }
 /*产品中心列表*/
 
 /*方案商企业-店铺*/
+.slideBox{
+  width:100%;
+  height:280px;
+  overflow:hidden;
+  position:relative;
+}
+.slideBox .hd{
+  height:30px;
+  overflow:hidden;
+  position:absolute;
+  bottom:10px;
+  z-index:1;
+  width: 80px;
+  left: 50%;
+  margin-left: -40px;
+
+}
+.slideBox .hd ul{
+  overflow:hidden;
+  zoom:1;
+  float:left;
+}
+.slideBox .hd ul li{
+  float:left;
+  margin:0 2px;
+  width:15px;
+  height:15px;
+  border-radius: 50%;
+  text-align:center;
+  background-color: #a8adb1;
+  cursor:pointer;
+}
+.slideBox .hd ul li.on{
+  background-color:#fb3c3c;
+}
+.slideBox .bd{
+  position:relative;
+  height:100%;
+  z-index:0;
+}
+.slideBox .bd li{
+  zoom:1;
+  vertical-align:middle;
+}
+.slideBox .bd img{
+  width:100%;
+  height:280px;
+  display:block;
+}
 .company-con .c-title{
   padding: 15px;
   font-size: 20px;
 }
 .company-con{
   .com-head{
-    padding: 15px 0;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd;
+    @include linear-gradient(#f9f9f9,#f1f1f1);
     li{
       float: left;
-      padding: 0 15px;
+      padding:15px;
       &.active{
-        color: #fc6303;
+        color: #fb3c3c;
+        background-color: #fff;
       }
     }
-  }
-  .com-list{
-    padding: 20px 25px;
   }
 }
 .com-list{
@@ -238,23 +355,31 @@
     }
     li{
       float: left;
-      margin-right: 50px;
-      margin-bottom: 20px;
-      width: 170px;
-      font-size: 14px;
+      margin-right: 35px;
+      margin-top: 20px;
+      width: 310px;
       &:nth-of-type(3n){
         margin-right: 0;
       }
+      a{
+        display: block;
+      }
+      .td{
+        display: table-cell;
+        vertical-align: top;
+      }
+      .td-right{
+        padding-left: 10px;
+      }
       .com-img{
-        width: 170px;
-        height: 170px;
+        width: 140px;
+        height: 100px;
       }
       .com-money{
         color: #ea3030;
-        margin: 10px 0;
-      }
-      .com-title{
-        line-height: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
       }
     }
   }
@@ -278,6 +403,10 @@
   line-height: 35px;
   font-size: 14px;
 }
+.market_top .item .name{
+  font-weight: 500;
+  color: #999;
+}
 .market_top .item span{
   padding: 10px;
 }
@@ -286,15 +415,23 @@
 }
 .seller{
   margin-top: 20px;
+  .s-title{
+    font-size: 24px;
+  }
   .seller-head{
     padding: 15px 0 10px;
     border-bottom: 1px solid #ddd;
+
     li{
       float: left;
       padding: 5px 15px;
       .fa-angle-down{
         margin-left: 8px;
       }
+    }
+    .li-title{
+      font-size: 20px;
+      margin-top: -5px;
     }
     .map-marker{
         background-color: #b3b3b3;
@@ -304,6 +441,49 @@
       i{
         margin-right: 8px;
       }
+    }
+  }
+}
+.map-marker{
+  position: relative;
+  .address-list{
+    position: absolute;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    z-index: 999;
+    border-radius: 5px;
+    top: 30px;
+    left: 0;
+    width: 360px;
+    color: #333;
+    padding: 10px;
+    display: none;
+    .one{
+      b,ul{
+        display: table-cell;
+        vertical-align: top;
+      }
+      b{
+        width: 80px;
+      }
+      ul{
+        li{
+          padding: 0;
+          margin-right: 25px;
+          margin-bottom: 10px;
+          &:nth-of-type(5n){
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .two{
+      border-top: 1px dashed #ddd;
+    }
+  }
+  &:hover{
+    .address-list{
+      display: block;
     }
   }
 }
@@ -320,8 +500,17 @@
       font-size: 16px;
       margin-bottom: 15px;
       span{
-        font-size: 12px;
-        color: #fc6303;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        background-color: #ccc;
+        height: 20px;
+        line-height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        &.active{
+          background-color: #f9671e;
+        }
       }
     }
     p{
@@ -380,11 +569,12 @@
   float: left;
   margin-left: 13px;
   h2{
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 15px;
   }
   p{
     color: #747474;
+    font-size: 12px;
     em{
       padding: 0 10px;
       color: #ddd;
@@ -401,8 +591,12 @@
   border-right: 1px solid #ddd;
 }
 .need-center .l h2{
-  font-size: 14px;
-  margin-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.need-center .l .price{
+  color: #f9671e;
+  font-size: 20px;
 }
 .need-center .l .money{
   font-size: 18px;
@@ -411,10 +605,25 @@
 }
 .need-center .l .explain{
   margin-bottom: 30px;
+  margin-top: 36px;
   p{
     line-height: 20px;
     &.budget{
       color: #fc6303;
+    }
+  }
+}
+.need-center .l .star{
+  span{
+    background-color: #f9671e;
+    border-radius: 50%;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+    i{
+      color: #fff;
     }
   }
 }
@@ -511,13 +720,27 @@
   margin: 20px 0;
 }
 .callshow-list .call-l-head{
-  padding: 15px 0;
+  padding: 15px 0 10px;
   border-bottom: 1px solid #ddd;
+
   li{
     float: left;
-    padding: 0 15px;
+    padding: 5px 15px;
+    .fa-angle-down{
+      margin-left: 8px;
+    }
+  }
+  .li-title{
+    font-size: 20px;
+    margin-top: -5px;
+  }
+  .map-marker{
+    background-color: #b3b3b3;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 6px;
     i{
-      margin-left: 5px;
+      margin-right: 8px;
     }
   }
 }
@@ -591,9 +814,12 @@
   .money{
     color: #f9671e;
   }
+  .times{
+    font-size: 12px;
+    color: #999;
+  }
   .title{
-    margin: 10px 0;
-    font-size: 14px;
+    margin-top: 10px;
   }
   .tail{
     color: #999;
@@ -606,3 +832,54 @@
   }
 }
 /*召集令---展示列表*/
+
+/*个人团队-店铺*/
+.store-one{
+  padding: 20px;
+  background-color: #e5e5e5;
+  margin-top: 20px;
+  .c-o-img{
+    width: 100px;
+    height: 100px;
+  }
+  .name{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 15PX;
+  }
+}
+.store-two{
+  margin-top: 20px;
+  .float-l{
+    border: 1px solid #ddd;
+  }
+  .store-two-menu{
+    border-bottom: 1px solid #ddd;
+    li{
+      padding: 10px 20px;
+      padding-top: 7px;
+      border-top: 3px solid #fafafa;
+      float: left;
+      border-right: 1px solid #ddd;
+      &.active{
+        border-top: 3px solid #f9671e;
+      }
+    }
+  }
+  .store-two-con{
+    padding: 10px;
+  }
+  .r{
+    width: 300px;
+  }
+}
+.store-three{
+  margin-top: 40px;
+  .head-menu-ul{
+    line-height: 30px;
+    .li-title{
+      font-size: 24px;
+    }
+  }
+}
+/*个人团队-店铺*/

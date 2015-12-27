@@ -545,9 +545,33 @@
    }
     .amend{
       position: absolute;
-      right: 50px;
+      right: 40px;
       top: 5px;
       color: #999;
+      border-bottom: 1px solid #999;
+    }
+    .edit{
+      .case{
+        border: 1px solid #ccc;
+        padding-left: 15px;
+      }
+    }
+    .add{
+      .add-text{
+        width: 780px;
+        height: 35px;
+        border: 1px solid #ddd;
+        padding-left: 15px;
+      }
+    }
+    .no{
+      line-height: 80px;
+      color: #999;
+      a{
+        margin-left: 20px;
+        text-decoration: underline;
+        color: #999;
+      }
     }
     .last-li{
       padding-left: 10px;
