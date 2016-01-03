@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>订单管理-卖出的</title>
-    <link rel="stylesheet" href="../../css/comment.css">
-    <link rel="stylesheet" href="../../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../css/witkey.css">
+    <link rel="stylesheet" href="../../../css/comment.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../css/witkey.css">
 </head>
 <body>
 <div id="top-site-wrap" class="top-site-wrap">
@@ -155,7 +155,10 @@
             </ul>
         </div>
         <div class="float-r r w860">
-            <h2 class="r-title">订单管理</h2>
+            <h2 class="r-title">
+                订单管理
+                <span class="fu-title">您的位置：<a href="">首页</a> > <a href="">我是威客</a> > 已卖出宝贝</span>
+            </h2>
             <div class="order-manage">
                <div class="order-manage-h">
                    <p>
@@ -213,9 +216,9 @@
                    <li>
                        <a href="">三个月前的订单</a>
                    </li>
-                   <li class="last-li">
-                       <a href="">更多 <i class="fa fa-angle-double-right"></i></a>
-                   </li>
+                   <!--<li class="last-li">-->
+                       <!--<a href="">更多 <i class="fa fa-angle-double-right"></i></a>-->
+                   <!--</li>-->
                </ul>
                 <div class="order-manage-c">
                     <div class="tr">
@@ -232,7 +235,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="../../images/customized_list_2.png" class="img">
+                                    <img src="../../../images/customized_list_2.png" class="img">
                                     <span>SSN263-N2600核心板（模块）</span>
                                 </td>
                                 <td>780.00</td>
@@ -249,7 +252,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="../../images/customized_list_2.png" class="img">
+                                    <img src="../../../images/customized_list_2.png" class="img">
                                     <span>SSN263-N2600核心板（模块）</span>
                                 </td>
                                 <td>780.00</td>
@@ -281,7 +284,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="../../images/customized_list_2.png" class="img">
+                                    <img src="../../../images/customized_list_2.png" class="img">
                                     <span>SSN263-N2600核心板（模块）</span>
                                 </td>
                                 <td>780.00</td>
@@ -298,7 +301,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="../../images/customized_list_2.png" class="img">
+                                    <img src="../../../images/customized_list_2.png" class="img">
                                     <span>SSN263-N2600核心板（模块）</span>
                                 </td>
                                 <td>780.00</td>
@@ -320,6 +323,19 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="share" style="display: block"></div>
+<div class="share-price">
+    <p class="title">订单原价：780元</p>
+    <p class="title">价格变动</p>
+    <p>
+        <input type="text" value="8900">元=700元
+    </p>
+    <p class="p-btn">
+        <a href="" class="btn">确认</a>
+        <a href="" class="btn btned">关闭</a>
+    </p>
 </div>
 
 <div class="footer">
@@ -351,4 +367,11 @@
     </div>
 </div>
 </body>
+<script src="../../../js/jquery.js"></script>
+<script>
+    $(".share").click(function(){
+        $(".share").hide();
+        $(".share-price").hide();
+    })
+</script>
 </html>

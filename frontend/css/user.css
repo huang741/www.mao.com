@@ -61,6 +61,11 @@
   margin-right: 5px;
   color: #f9671e;
 }
+.basicinfo p .revise {
+  margin-left: 10px;
+  color: #999;
+  text-decoration: underline;
+}
 .basicinfo p .t-text {
   width: 200px;
   height: 23px;
@@ -191,41 +196,139 @@
 
 /*设置头像*/
 /*我的收藏*/
-.user-con .coll-r .r-title {
-  border-bottom: 0;
-}
-
 .collection {
+  margin-top: 30px;
+}
+.collection .r-title {
+  position: relative;
+}
+.collection .r-title .coll-head {
+  position: absolute;
+  left: 120px;
+  top: 25px;
+}
+.collection .r-title .coll-head li {
+  float: left;
+  font-weight: 500;
+  font-size: 14px;
+  padding-right: 20px;
+}
+.collection .r-title .coll-head li.active {
+  color: #f9671e;
+}
+.collection .seller-con > li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+.collection .seller-con > li > .td {
+  display: table-cell;
+  vertical-align: top;
+}
+.collection .seller-con > li > .one {
+  width: 365px;
+}
+.collection .seller-con > li > .one h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.collection .seller-con > li > .one h2 span {
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  background-color: #ccc;
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.collection .seller-con > li > .one h2 span.active {
+  background-color: #f9671e;
+}
+.collection .seller-con > li > .one p {
+  margin: 7px 0;
+}
+.collection .seller-con > li > .one .one-add span {
+  margin: 0 6px;
+}
+.collection .seller-con > li > .one a {
+  color: #999;
+}
+.collection .seller-con > li > .two {
+  width: 165px;
+  padding-left: 40px;
+}
+.collection .seller-con > li > .two p {
+  line-height: 22px;
+}
+.collection .seller-con > li > .three {
+  width: 330px;
+}
+.collection .seller-con .three li {
+  float: left;
+  width: 140px;
+  margin-right: 40px;
+}
+.collection .seller-con .three li:nth-of-type(2n) {
+  margin-right: 0;
+}
+.collection .seller-con .three li .three-img {
+  width: 140px;
+  height: 100px;
+}
+.collection .seller-con .three li .title {
+  line-height: 20px;
+  overflow: hidden;
   font-size: 14px;
 }
-.collection .coll-head {
-  padding: 0 10px;
+.collection .seller-two li {
   border-bottom: 1px solid #ddd;
 }
-.collection .coll-head li {
+.collection .seller-two li .td {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 20px;
+}
+.collection .seller-two li .one {
+  width: 420px;
+}
+.collection .seller-two li .two {
+  width: 390px;
+  text-align: right;
+  padding-right: 50px;
+  color: #ff2828;
+  font-size: 20px;
+}
+.collection .seller-two li .title {
+  font-size: 16px;
+}
+.collection .seller-two li .explan {
+  margin: 20px 0;
+  font-size: 12px;
+}
+.collection .seller-two li .tail {
+  font-size: 12px;
+  color: #999;
+}
+.collection .seller-two li .tail span {
+  margin-right: 10px;
+}
+.collection .seller-three li {
+  width: 180px;
   float: left;
-  padding: 10px 5px;
-  margin-right: 30px;
+  margin: 20px 46.6px 0 0;
 }
-.collection .coll-head li.active {
-  color: #f9671e;
-  border-bottom: 2px solid #f9671e;
-  border-bottom: 2px solid #f9671e;
+.collection .seller-three li:nth-of-type(4n) {
+  margin-right: 0;
 }
-.collection .coll-con {
-  padding: 0 10px;
+.collection .seller-three li img {
+  width: 180px;
+  height: 120px;
+  display: block;
 }
-.collection .coll-con li {
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
-}
-.collection .coll-con li .title {
-  display: inline-block;
-  width: 430px;
-  overflow: hidden;
-}
-.collection .coll-con li .money {
-  color: #f9671e;
+.collection .seller-three li .money {
+  color: #ea3030;
+  font-size: 18px;
+  margin: 15px 0;
 }
 
 /*我的收藏*/
@@ -290,7 +393,7 @@
 /*信息总览*/
 .pandect .release {
   border: 1px dashed #ddd;
-  height: 320px;
+  height: 360px;
   text-align: center;
   color: #cacaca;
   font-size: 14px;
@@ -399,13 +502,9 @@
   line-height: 48px;
   color: #fff;
   background: -webkit-linear-gradient(#fc4f1e, #f42355);
-  /* Safari 5.1 - 6.0 */
   background: -o-linear-gradient(#fc4f1e, #f42355);
-  /* Opera 11.1 - 12.0 */
   background: -moz-linear-gradient(#fc4f1e, #f42355);
-  /* Firefox 3.6 - 15 */
   background: linear-gradient(#fc4f1e, #f42355);
-  /* 标准的语法 */
 }
 .pandect-side .explan .carry-btn {
   width: 140px;
@@ -415,13 +514,9 @@
   line-height: 48px;
   color: #fff;
   background: -webkit-linear-gradient(#65a7f3, #2a6feb);
-  /* Safari 5.1 - 6.0 */
   background: -o-linear-gradient(#65a7f3, #2a6feb);
-  /* Opera 11.1 - 12.0 */
   background: -moz-linear-gradient(#65a7f3, #2a6feb);
-  /* Firefox 3.6 - 15 */
   background: linear-gradient(#65a7f3, #2a6feb);
-  /* 标准的语法 */
 }
 
 /*信息总览*/
@@ -550,6 +645,7 @@
 }
 
 /*联系方式*/
+/*认证信息*/
 .attestation .att-list {
   margin-top: 20px;
   margin-left: 10px;
@@ -599,7 +695,7 @@
 
 .attestation .att-list .name {
   display: inline-block;
-  width: 50px;
+  width: 58px;
   text-align: right;
   padding-right: 5px;
 }
@@ -614,7 +710,7 @@
 }
 
 .attestation .att-list .nameed {
-  width: 100px;
+  width: 130px;
   margin-left: -50px;
   vertical-align: top;
 }
@@ -657,7 +753,7 @@
 }
 
 /*认证信息*
-/*认证信息*/
+
 /*支付设置*/
 .paymentSet .pay-list {
   margin-top: 30px;
@@ -683,6 +779,7 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-left: 5px;
+  padding-left: 8px;
 }
 
 .paymentSet .pay-input-mima {
@@ -691,6 +788,7 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-left: 5px;
+  padding-left: 8px;
 }
 
 .paymentSet .pay-get-ma {
@@ -844,6 +942,7 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-left: 5px;
+  padding-left: 8px;
 }
 
 .updateUsername .update-one .mobile-check {
@@ -852,6 +951,7 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-left: 5px;
+  padding-left: 8px;
 }
 
 .updateUsername .check-btn {
