@@ -1,6 +1,10 @@
 @charset "utf-8";
 @import "variable";
 /*需求评估书*/
+.in-bg{
+  background-color: #fff;
+  padding: 50px 0 100px;
+}
 .assess{
   font-size: 14px;
   .assess-list{
@@ -292,14 +296,15 @@
 
 /*创建memo*/
 .setMemo{
-  background-color: #7d6a6a;
+  background-color: #fff;
   font-size: 14px;
+  border: 1px solid #ddd;
+  margin-top: 30px;
 }
 .setMemo .memo-title{
   padding-top: 20px;
   padding-bottom: 50px;
   font-size: 24px;
-  color: #FFFFFF;
   text-align: center;
 }
 .setMemo .memo-list{
@@ -309,7 +314,6 @@
   display: inline-block;
   width: 150px;
   text-align: right;
-  color: #FFFFFF;
 }
 .setMemo .memo-input{
   width: 400px;
@@ -321,6 +325,15 @@
 .setMemo .w-input{
   width: 200px;
 }
+.setMemo .meno-div-r{
+  display: inline-block;
+}
+.setMemo .underline-a{
+  color: #999;
+  font-size: 12px;
+  margin-left: 10px;
+  text-decoration: underline;
+}
 .setMemo .memo-select{
   width: 120px;
   height: 30px;
@@ -330,7 +343,6 @@
 }
 .setMemo .memo-date{
   margin-left: 5px;
-  color: #FFFFFF;
 }
 .setMemo .memo-textarea{
   width: 600px;
@@ -363,9 +375,9 @@
   line-height: 30px;
   text-align: center;
   margin-left: -120px;
-  background-color: #FFFFFF;
-  border: 1px solid #DDDDDD;
+  background-color: #999;
   border-radius: 5px;
+  color: #fff;
 }
 .setMemo .memo-btn{
   width: 150px;
@@ -625,8 +637,11 @@
 /*创建项目进度表*/
 
 /*创建支付节点*/
+.setPayment{
+  padding: 50px 0;
+}
 .setPayment .payment-list{
-  margin-top: 120px;
+  margin-bottom: 20px;
 }
 .setPayment .payment-list p{
   padding-bottom: 10px;
@@ -635,13 +650,39 @@
   margin: 6px;
   font-weight: 100;
 }
+.setPayment .payment-list .name{
+  float: left;
+}
+.setPayment .payment-list  .table{
+  border-collapse: collapse;
+  width: 840px;
+  float: left;
+  .head{
+    td{
+      background-color: #f0f0f0;
+      height: 30px;
+    }
+  }
+  td{
+    text-align: center;
+    width: 142px;
+    border: 1px solid #ddd;
+    padding: 5px 0;
+  }
+}
+.setPayment .payment-listed{
+  padding-left: 70px;
+}
 .setPayment .payment-list .payment-btn{
   width: 120px;
   height: 32px;
   border: 0;
   background-color: #1CA7F4;
   color: #FFFFFF;
-  margin-right:300px;
+}
+.setPayment .payment-list .payment-btned{
+  float: right;
+  margin-right: 90px;
 }
 .share{
   background-color: #000;
@@ -655,13 +696,15 @@
 }
 .payment-form{
   width: 1000px;
-  background-color: #7d6a6a;
+  background-color: #fff;
   position: absolute;
   top: 50%;
   margin-top: -230px;
   left: 50%;
   margin-left: -500px;
+  border: 1px solid #ddd;
   display: none;
+  z-index: 9999;
 }
 .payment-form .form-list{
   padding-bottom: 20px;
@@ -671,7 +714,6 @@
   padding-bottom: 30px;
   padding-top: 30px;
   text-align: center;
-  color: #FFFFFF;
 }
 .payment-form .payment-name{
   width: 150px;
@@ -679,7 +721,6 @@
   display: inline-block;
 }
 .payment-form span{
-  color: #FFFFFF;
 }
 .payment-form .payment-input{
   width: 200px;
@@ -710,6 +751,7 @@
   padding-top: 120px;
   font-size: 14px;
   .demand-head{
+    margin-bottom: 20px;
     li{
       float: left;
       width: 165px;
@@ -778,6 +820,11 @@
       color: #333;
       margin-left: 125px;
     }
+    .sm{
+      font-size: 12px;
+      color: #a9a9a9;
+      margin-left: 10px;
+    }
     .notsee{
       color: #1ca7f4;
       font-size: 12px;
@@ -821,6 +868,320 @@
     .sub-titled{
       color: #fc6303;
     }
+    .underline-a{
+      text-decoration: underline;
+      color: #999;
+    }
+    .bq{
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      height: 29px;
+      background-color: #fff;
+      padding-top: 4px;
+      padding-left: 10px;
+      .tag{
+        display: block;
+        width: 60px;
+        float: left;
+        background-color: #dcdcdc;
+        height: 25px;
+        line-height: 25px;
+        margin-right: 10px;
+        font-size: 12px;
+        padding: 0 5px;
+        position: relative;
+        b{
+          position: absolute;
+          right: 5px;
+        }
+      }
+    }
   }
 }
+.demanded{
+  padding-top: 50px;
+}
 /*创建定制类项目需求书-需求详情*/
+
+/*创建项目节点树*/
+.create-tree{
+  width: 730px;
+  margin: auto;
+  padding: 50px 0 100px;
+  .tree-head{
+    li{
+      float: left;
+      margin-right: 20px;
+      span{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+      .gray{
+        background-color: #999;
+      }
+      .blue{
+        background-color: #55acfd;
+      }
+      .yellow{
+        background-color: #f0c018;
+      }
+      .green{
+        background-color: #30f41c;
+      }
+      .red{
+        background-color: #f41c1c;
+      }
+    }
+  }
+  .tree-con{
+    margin: 25px auto;
+  }
+}
+.tree-con{
+  .tree-list{
+    margin-bottom: 30px;
+    position: relative;
+    .piece{
+      display: inline-block;
+      width: 100px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      color: #fff;
+      position: relative;
+    }
+    .gray{
+      background-color: #999;
+    }
+    .blue{
+      background-color: #55acfd;
+    }
+    .yellow{
+      background-color: #f0c018;
+    }
+    .green{
+      background-color: #30f41c;
+    }
+    .red{
+      background-color: #f41c1c;
+    }
+  }
+  .tree-list-m{
+     text-align: center;
+     .vertical-line::after{
+       position: absolute;
+       content: "";
+       top: 40px;
+       height: 30px;
+       width: 1px;
+       background-color: #999;
+       left: 50px;
+     }
+    .vertical-line::before{
+      position: absolute;
+      content: "";
+      top: 70px;
+      height: 1px;
+      width: 315px;
+      background-color: #999;
+      right: 50px;
+    }
+    .left-line::before{
+      position: absolute;
+      content: "";
+      top: 20px;
+      height: 1px;
+      width: 265px;
+      background-color: #999;
+      right: 100px;
+    }
+  }
+  .tree-list-top{
+    margin-top: 100px;
+    .both-line::before{
+      position: absolute;
+      content: "";
+      bottom: 40px;
+      height: 70px;
+      width: 1px;
+      background-color: #999;
+      left: 50px;
+    }
+    .both-line::after{
+      position: absolute;
+      content: "";
+      top: 40px;
+      height: 110px;
+      width: 1px;
+      background-color: #999;
+      left: 50px;
+    }
+    .table{
+      border-collapse: collapse;
+      position: absolute;
+      left: 130px;
+      top: -20px;
+      .head{
+        td{
+          height: 40px;
+          background-color: #f0f0f0;
+        }
+      }
+      td{
+        text-align: center;
+        border: 1px solid #999;
+        padding: 5px;
+      }
+      td:nth-of-type(1){
+        width: 220px;
+      }
+      td:nth-of-type(2){
+        width: 100px;
+      }
+      td:nth-of-type(3){
+        width: 170px;
+      }
+      td:nth-of-type(4){
+        width: 150px;
+      }
+      .select{
+        width: 110px;
+        height: 35px;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+    }
+  }
+  .tree-list-bottom{
+    margin-top: 110px;
+    .bottom-line::after{
+      position: absolute;
+      content: "";
+      top: 40px;
+      height: 370px;
+      width: 1px;
+      background-color: #999;
+      left: 50px;
+    }
+  }
+  .tree-list-toped{
+    margin-top: 50px;
+    margin-bottom: 160px;
+  }
+  .tree-list-bottomed{
+    margin-top: 100px;
+    .bottom-line::after{
+      position: absolute;
+      content: "";
+      top: 40px;
+      height: 110px;
+      width: 1px;
+      background-color: #999;
+      left: 50px;
+    }
+    .tree-b-ul{
+      position: absolute;
+      top: 40px;
+      left: 0;
+      border: 1px solid #999;
+      border-top: 0;
+      width: 98px;
+      li{
+        text-align: center;
+        padding: 6px 0;
+      }
+    }
+  }
+}
+/*创建项目节点树*/
+
+/*创建项目进度表*/
+.c-schedule{
+  padding: 50px 0;
+  .c-s-list{
+    margin-bottom: 50px;
+    .title{
+      margin-left: 10px;
+      padding-left: 10px;
+      border-left: 3px solid #fc6303;
+      line-height: 1;
+      margin-bottom: 35px;
+    }
+    .table{
+      border-collapse: collapse;
+      width: 100%;
+      .head{
+        td{
+          background-color: #f0f0f0;
+          height: 30px;
+        }
+      }
+      td{
+        text-align: center;
+        width: 142px;
+        border: 1px solid #ddd;
+        padding: 5px 0;
+      }
+    }
+    .list-list{
+      margin-bottom: 20px;
+      .s-name {
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background-color: #999999;
+        color: #FFFFFF;
+        display: inline-block;
+      }
+      .s-t {
+        font-size: 36px;
+        color: #999999;
+        margin-left: 5px;
+        margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+      }
+      .s-w {
+        margin-left: 50px;
+      }
+      .p-c {
+        background-color: #50cb65;
+      }
+      .y-c {
+        background-color: #4ab4f7;
+      }
+      .work-name {
+        width: 200px;
+        display: inline-block;
+        text-align: left;
+      }
+      .work-show {
+        width: 10px;
+        height: 10px;
+        background-color: #999999;
+        display: inline-block;
+        margin-right: 5px;
+      }
+      p {
+        text-align: right;
+        padding-bottom: 10px;
+        .p-c {
+          background-color: #50cb65;
+        }
+        .y-c {
+          background-color: #4ab4f7;
+        }
+      }
+    }
+    .h-list{
+      margin-bottom: 0;
+    }
+  }
+}
+/*创建项目进度表*/

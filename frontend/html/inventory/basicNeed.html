@@ -2,57 +2,181 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>创建定制类项目需求书-需求详情</title>
+    <title>创建定制类项目需求书</title>
     <link rel="stylesheet" href="../../css/comment.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
     <link rel="stylesheet" href="../../css/inventory.css">
 </head>
 <body>
-<div class="container demand">
+<div id="top-site-wrap" class="top-site-wrap">
+    <div class="container cl">
+        <ul class="float-l">
+            <li class="set-loginInfo">
+                <a href="javascript:;" class="cur ">登陆</a>
+                <a href="javascript:;">注册</a>
+            </li>
+        </ul>
+        <ul class="float-r set-menu-r">
+            <li class="menu user">
+                <div class="menu-hd"><a href="javascript:;"><span class="h-ico"></span><span>用户中心</span></a></div>
+            </li>
+            <li class="menu info">
+                <div class="menu-hd"><a href="javascript:;"><span class="h-ico"></span><span>消息</span></a></div>
+            </li>
+            <li class="menu service">
+                <div class="menu-hd"><a href="javascript:;"><span class="h-ico"></span><span>客服</span></a></div>
+            </li>
+            <li class="menu phone">
+                <div class="menu-hd"><a href="javascript:;"><span class="h-ico"></span><span>手机版</span></a></div>
+            </li>
+            <li class="menu gps">
+                <div class="menu-hd"><a href="javascript:;"><span class="h-ico"></span><span>导航</span></a></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="header">
+    <div class="container">
+        <div class="logo"><a href="javascript:;"><img src="../images/logo195x22.png" alt=""></a></div>
+        <div class="search-center">
+            <div class="search-bd">
+                <div class="bd-input">
+                    <div class="bd-input-select">
+                        <div class="bd-select-hd">
+                            <span class="select-txt">方案产品</span>
+                            <span class="down-ico"></span>
+                        </div>
+                        <ul class="bd-select-bd">
+                            <li class="select-item"></li>
+                            <li class="select-item"></li>
+                            <li class="select-item"></li>
+                        </ul>
+                    </div>
+                    <div class="bd-input-bd">
+                        <input class="search-ipt" type="text" name="" id="" placeholder="智能手机方案">
+                    </div>
+                </div>
+                <div class="bd-btn">
+                    <a href="javascript:;">搜索</a>
+                </div>
+            </div>
+            <div class="search-nav">
+                <ul class="serch-nav-hd">
+                    <li>热门搜索</li>
+                    <li><a href="javascript:;">X86方案</a></li>
+                    <li class="cur"><a href="javascript:;">智能手机方法</a></li>
+                    <li><a href="javascript:;">服务器主板</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container nav-center">
+    <ul class="nav-hd">
+        <li><a href="javascript:;">开发市场</a></li>
+        <li><a href="javascript:;">产品库</a></li>
+        <li><a href="javascript:;">技术力量<span class="ico"></span></a></li>
+        <li><a href="javascript:;">新手上路</a></li>
+        <li><a href="javascript:;">人才市场<span class="ico hot"></span></a></li>
+    </ul>
+</div>
+
+<div class="J_slide_nav container">
+    <div class="silde-nav">
+        <div class="s-nav-hd">
+            <span></span>
+            <h2>开发需求分类</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container demand demanded">
     <ul class="demand-head cl">
-        <li><a href="">基本需求</a></li>
-        <li class="active"><a href="">需求详情</a></li>
+        <li class="active"><a href="">基本需求</a></li>
+        <li><a href="">需求详情</a></li>
         <li><a href="">资金模式</a></li>
         <li><a href="">需求确定</a></li>
     </ul>
     <div class="demand-list">
-        <h3 class="title">需求概述</h3>
+        <h3 class="title">基本信息</h3>
         <div class="con">
             <div class="con-list">
-                <span class="name nameed">需求描述</span>
-                <textarea class="textarea"></textarea>
-                <p class="explan">我们建议您将需求描述得尽量详细、准确；服务方才能准确地为你提供相应的评估</p>
+                <span class="name">需求标题</span>
+                <input type="text" class="textlen" />
             </div>
-        </div>
-    </div>
-
-    <div class="demand-list">
-        <h3 class="title">需求详情</h3>
-        <div class="con">
-            <h2 class="explaned">根据用户选择的内容分类，载入关联需求表单</h2>
-        </div>
-    </div>
-
-    <div class="demand-list">
-        <h3 class="title">隐私信息</h3>
-        <div class="con">
             <div class="con-list">
-                <span class="name">查阅权限限定</span>
+                <span class="name">查看有效期</span>
+                <input type="text" class="textshort" />
+            </div>
+            <div class="con-list">
+                <span class="name">计划开展起止日期</span>
+                <input type="text" class="textshort" /> 至 <input type="text" class="textshort" />
+            </div>
+            <div class="con-list">
+                <span class="name namec">需求内容</span>
                 <select class="select">
-                    <option>屏蔽列表以外用户可见</option>
+                    <option>请选择</option>
                 </select>
-                <span class="notsee">管理屏蔽用户列表</span>
+                <select class="select">
+                    <option>请选择</option>
+                </select>
             </div>
             <div class="con-list">
-                <span class="name nameed">隐私需求</span>
-                <textarea class="textarea"></textarea>
+                <span class="name">是否必须含税</span>
+                <label><input type="checkbox">是</label>
+                <label><input type="checkbox">否</label>
+                <input type="text" class="textshort" />
+            </div>
+        </div>
+    </div>
+
+    <div class="demand-list">
+        <h3 class="title">设置服务方需求</h3>
+        <div class="con">
+            <div class="con-list">
+                <span class="name">接包方位置要求</span>
+                <div class="bq textshort">
+                    <span class="tag">深圳<b>×</b></span>
+                    <span class="tag">深圳<b>×</b></span>
+                </div>
+                <select class="select">
+                    <option>广东</option>
+                </select>
+                <select class="select">
+                    <option>东莞</option>
+                </select>
+                <a href="" class="underline-a">添加</a>
             </div>
             <div class="con-list">
-                <span class="name">隐私需求附件</span>
-                <input type="text" class="textshort">
-                <input type="file" class="file" />
-                <span class="add">上传附件</span>
-                <p class="explan">（支持rar,zip,txt,doc,xls,pdf,jpg,jpeg,bmp格式，最大10M，其他格式文件请压缩为rar格式文件后上传。）</p>
-                <p class="explan"><input type="checkbox">屏蔽搜素引擎，防止需求被百度等搜素引擎收录</p>
+                <span class="name">接包方需求类型</span>
+                <select class="select">
+                    <option>请选择</option>
+                </select>
+            </div>
+            <div class="con-list">
+                <span class="name">接包方认证要求</span>
+                <label><input type="checkbox"> <i class="fa fa-credit-card"></i> 实名认证</label>
+                <label><input type="checkbox"> <i class="fa fa-mobile"></i> 手机认证</label>
+                <label><input type="checkbox"> 无需求</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="demand-list">
+        <h3 class="title">联系方式</h3>
+        <div class="con">
+            <div class="con-list">
+                <span class="name">联系方式</span>
+                <input type="text" class="textshort" />
+                <span class="sm">用于管理员审核</span>
+            </div>
+            <div class="con-list">
+                <span class="name">其他</span>
+                <label><input type="checkbox"> 邮箱</label>
+                <label><input type="checkbox"> QQ</label>
+                <label><input type="checkbox"> 固定电话</label>
             </div>
         </div>
     </div>
