@@ -1,0 +1,266 @@
+@charset "UTF-8";
+/*公共样式*/
+.w120 {
+  width: 120px;
+}
+
+.w860 {
+  width: 860px;
+}
+
+.user .user-top-menu {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+}
+.user .user-top-menu li {
+  float: left;
+  padding: 15px 25px;
+}
+.user .user-top-menu li i {
+  margin-right: 5px;
+}
+.user .user-top-menu li.active {
+  background-color: #e6e6e6;
+}
+
+.user-con .l-menu {
+  border: 1px solid #ddd;
+}
+.user-con .l-menu li {
+  padding: 15px 0;
+  text-align: center;
+}
+.user-con .l-menu li.active a {
+  color: #f9671e;
+}
+
+.user-con .r .r-title {
+  font-size: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.r .r-title .t-sub {
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 12px;
+}
+.r .r-title .t-sub a {
+  margin-right: 10px;
+}
+
+.r .r-title .r-p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+.r .r-title .r-p span {
+  margin-right: 10px;
+}
+.r .r-title .r-p span:last-child {
+  margin-right: 0;
+}
+.r .r-title .r-p span select {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 28px;
+  width: 118px;
+  resize: none;
+}
+.r .r-title .r-p .btn-span {
+  float: right;
+}
+.r .r-title .r-p .btn-span a {
+  display: inline-block;
+  background-color: #009ffa;
+  color: #fff;
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
+/*公共样式*/
+/*单个聊天记录*/
+.r .r-title .xm {
+  color: #fc2929;
+}
+
+.r .r-title .float-r-con {
+  float: right;
+}
+.r .r-title .float-r-con .btn {
+  display: inline-block;
+  background-color: #009ffa;
+  color: #fff;
+  width: 160px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.news {
+  margin-top: 20px;
+}
+.news .news-ul li {
+  margin-bottom: 25px;
+}
+.news .news-ul li:last-child {
+  margin-bottom: 0;
+}
+.news .news-ul li .td {
+  display: table-cell;
+  vertical-align: top;
+}
+.news .news-ul .img {
+  width: 60px;
+  height: 60px;
+}
+.news .news-ul .img img {
+  width: 60px;
+  height: 60px;
+}
+.news .news-ul .con {
+  width: 650px;
+}
+.news .news-ul .con .name {
+  font-size: 14px;
+}
+.news .news-ul .con .con-box {
+  font-size: 12px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  position: relative;
+}
+.news .news-ul .con .arrow {
+  position: absolute;
+  top: -6px;
+}
+.news .news-ul .con .arrow-l {
+  left: -7px;
+}
+.news .news-ul .con .arrow-r {
+  right: -7px;
+}
+.news .boundary {
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  width: 300px;
+  font-size: 16px;
+  color: #999;
+}
+.news .boundary:before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100px;
+  top: 12px;
+  left: 0;
+  background-color: #ddd;
+}
+.news .boundary:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100px;
+  top: 12px;
+  right: 0;
+  background-color: #ddd;
+}
+
+.news-ul .li-l .con {
+  padding-left: 10px;
+}
+.news-ul .li-r {
+  float: right;
+}
+.news-ul .li-r .con {
+  padding-right: 10px;
+}
+
+/*单个聊天记录*/
+/*付款信息*/
+.r .r-title label {
+  margin-right: 8px;
+}
+.r .r-title .label-tag {
+  font-weight: 500;
+  font-size: 0;
+}
+.r .r-title .label-tag span {
+  display: inline-block;
+  padding: 6px 20px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  background-color: #f2f2f2;
+}
+
+.pay-ul {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+.pay-ul li {
+  margin-bottom: 20px;
+  position: relative;
+}
+.pay-ul li:last-child {
+  margin-bottom: 0;
+}
+.pay-ul li .ch {
+  margin-right: 8px;
+}
+.pay-ul li .times {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #999;
+}
+
+/*付款信息*/
+/*聊天记录*/
+.chat-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+.chat-list li .td {
+  display: table-cell;
+  vertical-align: top;
+}
+.chat-list li .img {
+  width: 60px;
+  height: 60px;
+}
+.chat-list li .img img {
+  width: 60px;
+  height: 60px;
+}
+.chat-list li .con {
+  width: 790px;
+  padding-left: 10px;
+}
+.chat-list li .con .con-p {
+  color: #555;
+  font-size: 12px;
+  margin: 8px 0;
+}
+.chat-list li .con .tails {
+  font-size: 12px;
+  color: #999;
+}
+.chat-list li .con .reply {
+  float: right;
+}
+.chat-list li .con .reply a {
+  color: #1ca7f4;
+  font-size: 12px;
+}
+.chat-list li .con .reply span {
+  margin: 0 5px;
+}
+
+/*聊天记录*/
