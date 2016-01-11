@@ -113,6 +113,10 @@
   font-size: 14px;
 }
 
+.l-title .a-btn {
+  background-color: #009ffa;
+}
+
 .l-r-p {
   padding: 0px 15px;
 }
