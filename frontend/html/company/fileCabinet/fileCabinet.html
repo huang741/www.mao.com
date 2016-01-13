@@ -73,94 +73,60 @@
     </div>
 </div>
 
-<div class="container nav-center">
-    <ul class="nav-hd">
-        <li><a href="javascript:;">开发市场</a></li>
-        <li><a href="javascript:;">产品库</a></li>
-        <li><a href="javascript:;">技术力量<span class="ico"></span></a></li>
-        <li><a href="javascript:;">新手上路</a></li>
-        <li><a href="javascript:;">人才市场<span class="ico hot"></span></a></li>
-    </ul>
-</div>
-
-<div class="J_slide_nav container">
-    <div class="silde-nav">
-        <div class="s-nav-hd">
-            <span></span>
-            <h2>开发需求分类</h2>
-        </div>
-    </div>
-</div>
-
 <div class="container user">
     <ul class="user-top-menu cl">
         <li class="active">
-            <a href=""><i class="fa fa-home"></i>我的机器猫</a>
+            <a href=""><i class="fa fa-home"></i>虚拟办公室</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">项目部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">业务部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">人事部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">财务部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">企业信息</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">账户</a>
+        </li>
+        <li>
+            <a href="">站内信</a>
+        </li>
+        <li>
+            <a href="">快捷</a>
         </li>
     </ul>
     <div class="user-con cl">
         <div class="float-l l w120">
             <ul class="l-menu">
                 <li class="active">
-                    <a href="">威客权益</a>
+                    <a href="">评论管理</a>
                 </li>
                 <li>
-                    <a href="">店铺管理</a>
+                    <a href="">我的收藏夹</a>
                 </li>
                 <li>
-                    <a href="">水印管理</a>
+                    <a href="">文件柜</a>
                 </li>
                 <li>
-                    <a href="">案例管理</a>
-                </li>
-                <li>
-                    <a href="">商品管理</a>
-                </li>
-                <li>
-                    <a href="">卖出订单</a>
-                </li>
-                <li>
-                    <a href="">项目管理</a>
-                </li>
-                <li>
-                    <a href="">收到的项目邀请</a>
-                </li>
-                <li>
-                    <a href="">评估书管理</a>
-                </li>
-                <li>
-                    <a href="">快捷需求申请</a>
-                </li>
-                <li>
-                    <a href="">发布召集令申请</a>
+                    <a href="">我要投诉</a>
                 </li>
             </ul>
         </div>
-        <div class="float-r r w840">
+        <div class="float-r r w860">
             <h2 class="r-title">
             	文件柜
             	<span class="up-contrac fc-up-contrac">
-            		上传文件
+            		<span id="upload">上传文件</span>
             		<input type="text" class="fc-text" placeholder="文件名/项目名称/项目ID"/>
-            		<img src="../../../images/check.png" class="fc-check" />
+                    <i class="fa fa-search fc-check"></i>
             	</span>
             </h2> 
             	<table class="fileCabinet comment-table">
@@ -190,12 +156,12 @@
     </div>
 </div>
 
-<div class="share" style="display: block"></div>
-<div class="share-price">
+<div class="share"></div>
+<div class="share-file">
 	<form>
     <p class="title title-title">
     	上传文件
-    	<a class="close" href="">×</a>
+    	<a class="close" href="javascript:;" id="close">×</a>
     </p>
     <p class="title">
        <span class="name">文件名称</span>
@@ -258,8 +224,16 @@
 <script>
     $(".share").click(function(){
         $(".share").hide();
-        $(".share-price").hide();
-    })
+        $(".share-file").hide();
+    });
+    $("#upload").click(function(){
+        $(".share").show();
+        $(".share-file").show();
+    });
+    $("#close").click(function(){
+        $(".share").hide();
+        $(".share-file").hide();
+    });
 </script>
 
 </html>

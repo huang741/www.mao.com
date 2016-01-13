@@ -2119,7 +2119,6 @@
 }
 
 .bid-project {
-  width: 840px;
   padding-bottom: 30px;
   border-bottom: 1px solid #DDDDDD;
 }
@@ -3598,8 +3597,7 @@
 
 .fund-ul li {
   float: left;
-  display: block;
-  margin-right: 80px;
+  padding: 0 20px;
 }
 
 .fund-ul li a {
@@ -4049,16 +4047,20 @@
 
 /*收到的评估书列表*/
 /*收到的评估书列表-对比评估书*/
-.no-p-top {
-  margin-top: 0px;
-}
-
 .contrastBookList {
-  margin-top: 200px;
   border: 1px solid #DDDDDD;
   border-bottom: 0;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   background-color: #FFFFFF;
+  width: 860px;
+  position: fixed;
+  height: 140px;
+  left: 50%;
+  top: 50%;
+  margin-left: -430px;
+  margin-top: -70px;
+  z-index: 999;
+  display: none;
 }
 
 .contrastBookList .cbl-list {
@@ -4461,11 +4463,10 @@
   margin-left: 10px;
 }
 
-.fc-check {
+.fc-up-contrac .fc-check {
   position: absolute;
-  top: 0;
-  left: 250px;
-  top: 5px;
+  top: 10px;
+  right: 10px;
 }
 
 .fileCabinet {
@@ -4500,25 +4501,26 @@
   font-size: 12px;
 }
 
-.share-price {
+.share-file {
   padding: 20px;
   height: 320px;
   z-index: 10000;
   position: fixed;
   top: 50%;
-  margin-top: -170px;
+  margin-top: -180px;
   width: 600px;
   left: 50%;
-  margin-left: -250px;
+  margin-left: -320px;
   background-color: #fff;
+  display: none;
 }
 
-.share-price .title {
+.share-file .title {
   padding-left: 20px;
   margin-bottom: 20px;
 }
 
-.share-price .title-title {
+.share-file .title-title {
   font-size: 20px;
   color: #666666;
   text-align: center;
@@ -4526,7 +4528,7 @@
   position: relative;
 }
 
-.share-price .close {
+.share-file .close {
   font-size: 34px;
   display: inline-block;
   float: right;
@@ -4537,7 +4539,7 @@
   left: 575px;
 }
 
-.share-price select {
+.share-file select {
   border: 1px solid #ddd;
   margin-left: 15px;
   height: 32px;
@@ -4548,11 +4550,11 @@
   border-radius: 5px;
 }
 
-.share-price .selectlen {
+.share-file .selectlen {
   width: 200px;
 }
 
-.share-price .share-input {
+.share-file .share-input {
   border: 1px solid #ddd;
   margin-left: 15px;
   height: 32px;
@@ -4563,11 +4565,11 @@
   border-radius: 5px;
 }
 
-.share-price .len {
+.share-file .len {
   width: 270px;
 }
 
-.share-price .share-flie {
+.share-file .share-flie {
   width: 120px;
   height: 32px;
   opacity: 0;
@@ -4576,11 +4578,11 @@
   left: 400px;
 }
 
-.share-price .select-file {
+.share-file .select-file {
   position: relative;
 }
 
-.share-price .file-span {
+.share-file .file-span {
   width: 120px;
   height: 32px;
   border: 1px solid #DDDDDD;
@@ -4592,12 +4594,12 @@
   line-height: 32px;
 }
 
-.share-price .p-btn {
+.share-file .p-btn {
   margin-top: 20px;
   margin-left: 15px;
 }
 
-.share-price .p-btn .btn {
+.share-file .p-btn .btn {
   display: inline-block;
   background-color: #009ffa;
   color: #fff;
@@ -4607,17 +4609,17 @@
   text-align: center;
 }
 
-.share-price .name {
+.share-file .name {
   width: 80px;
   display: inline-block;
   text-align: right;
 }
 
-.share-price .fc-w {
+.share-file .fc-w {
   margin-left: 20px;
 }
 
-.share-price .p-btn .btned {
+.share-file .p-btn .btned {
   background-color: #999999;
 }
 
