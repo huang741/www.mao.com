@@ -2,10 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>单个快捷需求详情</title>
-    <link rel="stylesheet" href="../../../css/comment.css">
-    <link rel="stylesheet" href="../../../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../css/company.css">
+    <title>添加</title>
+    <link rel="stylesheet" href="../../../../css/comment.css">
+    <link rel="stylesheet" href="../../../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../../kiteditor/themes/default/default.css" />
+    <link rel="stylesheet" href="../../../../css/company.css">
+    <script charset="utf-8" src="../../../../kiteditor/kindeditor-min.js"></script>
+    <script>
+        var editor;
+
+        KindEditor.ready(function(K) {
+            editor = K.create('textarea[name="content"]', {
+                resizeType : 0,
+                allowPreviewEmoticons : false,
+                width : "650px",
+                height : "400px",
+                items : [
+                    'source','fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                    'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright',  '|','flash','media', 'emoticons', 'image','multiimage', 'link','unlink'],
+                afterCreate : function() { this.sync(); },
+                afterBlur:function(){ this.sync(); }
+
+            });
+        });
+    </script>
 </head>
 <body>
 <div id="top-site-wrap" class="top-site-wrap">
@@ -83,28 +103,39 @@
     </p>
     <ul class="user-top-menu cl">
         <li class="active">
-            <a href=""><i class="fa fa-home"></i>我的机器猫</a>
+            <a href=""><i class="fa fa-home"></i>虚拟办公室</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">项目部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">业务部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">人事部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">财务部</a>
+        </li>
+        <li class="active">
+            <a href="">企业信息</a>
+            <ul class="submenu">
+                <li>
+                    <a href="">店铺设置</a>
+                </li>
+            </ul>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">账户</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">站内信</a>
+        </li>
+        <li>
+            <a href="">快捷</a>
         </li>
     </ul>
-    <div class="user-con cl  da-size">
+    <div class="user-con cl">
         <div class="float-l l w120">
             <ul class="l-menu">
                 <li class="active">
@@ -114,13 +145,10 @@
                     <a href="">企业信息</a>
                 </li>
                 <li>
-                    <a href="">案列</a>
+                    <a href="">案例</a>
                 </li>
                 <li>
-                    <a href="">企业介绍</a>
-                </li>
-                <li>
-                    <a href="">自由页管理</a>
+                    <a href="">自由业管理</a>
                 </li>
                 <li>
                     <a href="">水印管理</a>
@@ -138,44 +166,49 @@
                     <a href="">快捷需求发布管理</a>
                 </li>
                 <li>
-                    <a href="">快捷需求申请管理</a>
+                    <a href="">商品管理</a>
                 </li>
             </ul>
         </div>
         <div class="float-r r w860">
             <h2 class="r-title">
-                服务申请管理
+                添加页面
+                <span class="s-title">
+                    <a href="">自由页管理</a>
+                </span>
             </h2>
-            <div class="serviced">
-                <div class="s-img">
-                    <img src="../../../images/customized_list_2.png" class="img">
+            <div class="sh-introduce">
+                 <div class="tr">
+                     <div class="td name">所属分类</div>
+                     <div class="td con">
+                         <select class="sh-select">
+                             <option>1845</option>
+                         </select>
+                     </div>
+                 </div>
+                <div class="tr">
+                    <div class="td name">页面名称</div>
+                    <div class="td con">
+                       <input class="sh-text" type="text">
+                    </div>
                 </div>
-                <div class="s-con">
-                    <h2 class="title">哈哈哈哈哈哈</h2>
-                    <p>隶属分类：放到</p>
-                    <p>有效时间剩余：放到</p>
-                    <p>赏金：放到</p>
+                <div class="tr">
+                    <div class="td name named">页面内容</div>
+                    <div class="td con">
+                        <textarea class="form-control" name="content" ></textarea>
+                    </div>
                 </div>
-                <table class="s-table">
-                    <tr class="head">
-                        <td>申请方昵称</td>
-                        <td>用户留言</td>
-                        <td>操作</td>
-                    </tr>
-                    <tr>
-                        <td>哈哈哈</td>
-                        <td>哈哈哈</td>
-                        <td>
-                            <p><a href="">授予</a></p>
-                            <p><a href="">付款</a></p>
-                            <p><a href="">确认收货</a></p>
-                        </td>
-                    </tr>
-                </table>
+                <div class="tr">
+                    <div class="td name"></div>
+                    <div class="td con">
+                        <a class="btn" href="">保存</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 
 <div class="footer">
     <div class="container cl">

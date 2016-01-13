@@ -2,10 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>单个快捷需求详情</title>
-    <link rel="stylesheet" href="../../../css/comment.css">
-    <link rel="stylesheet" href="../../../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../css/company.css">
+    <title>资源服务发布</title>
+    <link rel="stylesheet" href="../../../../css/comment.css">
+    <link rel="stylesheet" href="../../../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../../kiteditor/themes/default/default.css" />
+    <link rel="stylesheet" href="../../../../css/company.css">
+    <script charset="utf-8" src="../../../../kiteditor/kindeditor-min.js"></script>
+    <script>
+        var editor;
+
+        KindEditor.ready(function(K) {
+            editor = K.create('textarea[name="content"]', {
+                resizeType : 0,
+                allowPreviewEmoticons : false,
+                width : "650px",
+                height : "400px",
+                items : [
+                    'source','fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                    'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright',  '|','flash','media', 'emoticons', 'image','multiimage', 'link','unlink'],
+                afterCreate : function() { this.sync(); },
+                afterBlur:function(){ this.sync(); }
+
+            });
+        });
+    </script>
 </head>
 <body>
 <div id="top-site-wrap" class="top-site-wrap">
@@ -74,37 +94,36 @@
 </div>
 
 <div class="container user">
-    <p class="user-htitle">
-        <a href="">企业中心</a>
-        <span> > </span>
-        <a href="">企业信息</a>
-        <span> > </span>
-        网站管理
-    </p>
     <ul class="user-top-menu cl">
         <li class="active">
-            <a href=""><i class="fa fa-home"></i>我的机器猫</a>
+            <a href=""><i class="fa fa-home"></i>虚拟办公室</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">项目部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">业务部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">人事部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">财务部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">企业信息</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">账户</a>
+        </li>
+        <li>
+            <a href="">站内信</a>
+        </li>
+        <li>
+            <a href="">快捷</a>
         </li>
     </ul>
-    <div class="user-con cl  da-size">
+    <div class="user-con cl">
         <div class="float-l l w120">
             <ul class="l-menu">
                 <li class="active">
@@ -143,35 +162,57 @@
             </ul>
         </div>
         <div class="float-r r w860">
-            <h2 class="r-title">
-                服务申请管理
-            </h2>
-            <div class="serviced">
-                <div class="s-img">
-                    <img src="../../../images/customized_list_2.png" class="img">
+            <h2 class="r-title">资源服务发布表单</h2>
+            <div class="prelease">
+                <p class="explain">信息填写越完善，服务曝光率越高，越获得雇主认可。</p>
+                <div class="release-list">
+                     <span class="name">标题</span>
+                     <input type="text" class="r-text">
+                     <span class="zs">还能输入30字</span>
                 </div>
-                <div class="s-con">
-                    <h2 class="title">哈哈哈哈哈哈</h2>
-                    <p>隶属分类：放到</p>
-                    <p>有效时间剩余：放到</p>
-                    <p>赏金：放到</p>
+                <div class="release-list">
+                    <span class="name">价格</span>
+                    <input type="text" class="r-text1">
+                    <span class="zs">元</span>
                 </div>
-                <table class="s-table">
-                    <tr class="head">
-                        <td>申请方昵称</td>
-                        <td>用户留言</td>
-                        <td>操作</td>
-                    </tr>
-                    <tr>
-                        <td>哈哈哈</td>
-                        <td>哈哈哈</td>
-                        <td>
-                            <p><a href="">授予</a></p>
-                            <p><a href="">付款</a></p>
-                            <p><a href="">确认收货</a></p>
-                        </td>
-                    </tr>
-                </table>
+                <div class="release-list">
+                    <span class="name named">封面图片</span>
+                    <img src="../../../../images/customized_list_2.png" class="big-img">
+                    <span class="small-img">
+                        <ul class="small-img-ul cl">
+                            <li><img src="../../../../images/customized_list_2.png"></li>
+                            <li><img src="../../../../images/customized_list_2.png"></li>
+                            <li><img src="../../../../images/customized_list_2.png"></li>
+                            <li><img src="../../../../images/customized_list_2.png"></li>
+                        </ul>
+                        <p class="tail">
+                            <a href="" class="t-btn">上传图片</a>
+                            <span class="span span-one">1.图片尺寸低于400*400，大小不超过500k。 </span>
+                            <span class="span span-two"> 2.图片尽量清晰，并能够体现服务卖点。 </span>
+                        </p>
+                    </span>
+                </div>
+                <div class="release-list">
+                    <span class="name">所属分类</span>
+                    <select class="r-select">
+                        <option>系统开发</option>
+                    </select>
+                    <select class="r-select">
+                        <option>ID结构</option>
+                    </select>
+                </div>
+                <div class="release-list release-listed cl">
+                    <span class="name named">详情介绍</span>
+                    <textarea class="form-control" name="content" ></textarea>
+                </div>
+                <div class="release-list release-listed cl">
+                    <span class="name named">成功案例</span>
+                    <textarea class="form-control" name="content" ></textarea>
+                </div>
+                <div class="release-list">
+                    <span class="name"></span>
+                    <a href="" class="t-btn">立即发布</a>
+                </div>
             </div>
         </div>
     </div>

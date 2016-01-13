@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>单个快捷需求详情</title>
-    <link rel="stylesheet" href="../../../css/comment.css">
-    <link rel="stylesheet" href="../../../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../css/company.css">
+    <title>网站管理</title>
+    <link rel="stylesheet" href="../../../../css/comment.css">
+    <link rel="stylesheet" href="../../../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../../css/company.css">
 </head>
 <body>
 <div id="top-site-wrap" class="top-site-wrap">
@@ -83,28 +83,39 @@
     </p>
     <ul class="user-top-menu cl">
         <li class="active">
-            <a href=""><i class="fa fa-home"></i>我的机器猫</a>
+            <a href=""><i class="fa fa-home"></i>虚拟办公室</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">项目部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">业务部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">人事部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">财务部</a>
+        </li>
+        <li class="active">
+            <a href="">企业信息</a>
+            <ul class="submenu">
+                <li>
+                    <a href="">店铺设置</a>
+                </li>
+            </ul>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">账户</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">站内信</a>
+        </li>
+        <li>
+            <a href="">快捷</a>
         </li>
     </ul>
-    <div class="user-con cl  da-size">
+    <div class="user-con cl">
         <div class="float-l l w120">
             <ul class="l-menu">
                 <li class="active">
@@ -114,13 +125,10 @@
                     <a href="">企业信息</a>
                 </li>
                 <li>
-                    <a href="">案列</a>
+                    <a href="">案例</a>
                 </li>
                 <li>
-                    <a href="">企业介绍</a>
-                </li>
-                <li>
-                    <a href="">自由页管理</a>
+                    <a href="">自由业管理</a>
                 </li>
                 <li>
                     <a href="">水印管理</a>
@@ -138,44 +146,89 @@
                     <a href="">快捷需求发布管理</a>
                 </li>
                 <li>
-                    <a href="">快捷需求申请管理</a>
+                    <a href="">商品管理</a>
                 </li>
             </ul>
         </div>
         <div class="float-r r w860">
             <h2 class="r-title">
-                服务申请管理
+                网站管理
             </h2>
-            <div class="serviced">
-                <div class="s-img">
-                    <img src="../../../images/customized_list_2.png" class="img">
-                </div>
-                <div class="s-con">
-                    <h2 class="title">哈哈哈哈哈哈</h2>
-                    <p>隶属分类：放到</p>
-                    <p>有效时间剩余：放到</p>
-                    <p>赏金：放到</p>
-                </div>
-                <table class="s-table">
+            <div class="sh-website">
+                <table class="table">
                     <tr class="head">
-                        <td>申请方昵称</td>
-                        <td>用户留言</td>
-                        <td>操作</td>
+                        <td>参数说明</td>
+                        <td>参数值</td>
+                        <td>用途及示例</td>
                     </tr>
                     <tr>
-                        <td>哈哈哈</td>
-                        <td>哈哈哈</td>
+                        <td>网站名称</td>
                         <td>
-                            <p><a href="">授予</a></p>
-                            <p><a href="">付款</a></p>
-                            <p><a href="">确认收货</a></p>
+                            <input class="web-text" type="text">
+                        </td>
+                        <td>
+                            title
                         </td>
                     </tr>
+                    <tr>
+                        <td>核心产品</td>
+                        <td>
+                            <input class="web-text" type="text">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>关键词</td>
+                        <td>
+                            <input class="web-text" type="text">
+                        </td>
+                        <td>keywords</td>
+                    </tr>
+                    <tr>
+                        <td>网站描述</td>
+                        <td>
+                            <input class="web-text" type="text">
+                        </td>
+                        <td>describe</td>
+                    </tr>
+                    <tr>
+                        <td>访问统计代码</td>
+                        <td>
+                            <input class="web-text" type="text">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>宣传语</td>
+                        <td>
+                            <input class="web-text" type="text">
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>域名绑定</td>
+                        <td>
+                            <input class="web-text-s" type="text">
+                            <span class="explain">www.baidu.com</span>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>开启QQ服务</td>
+                        <td>
+                            <input class="web-text-s" type="text">
+                            <label><input type="radio">是</label>
+                            <label><input type="radio">否</label>
+                        </td>
+                        <td></td>
+                    </tr>
                 </table>
+                <a href="" class="btn">保存</a>
             </div>
         </div>
     </div>
 </div>
+
 
 <div class="footer">
     <div class="container cl">

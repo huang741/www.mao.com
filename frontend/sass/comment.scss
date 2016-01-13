@@ -420,10 +420,11 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
     height: 48px;
     margin-left: 180px;
     border-bottom: 1px solid #ddd;
-    li {
+    & > li {
       float: left;
       font-size: 16px;
       line-height: 48px;
+      position: relative;
      a {
         float: left;
         padding: 0 45px;
@@ -442,6 +443,33 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
       .hot {
         background-position: 0 -21px;
       }
+    }
+    .submenu{
+      position: absolute;
+      left: 0;
+      top: 48px;
+      background-color: #fff;
+      border: 1px solid #dcdcdc;
+      border-top: 0;
+      z-index: 999;
+      display: none;
+      li{
+        text-align: center;
+        width: 155px;
+        a{
+          padding: 0;
+          display: block;
+          float: none;
+        }
+      }
+    }
+    .submenu-p{
+      li{
+        width: 138px;
+      }
+    }
+    & > li:hover .submenu{
+      display: block;
     }
   }
 }

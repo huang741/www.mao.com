@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>单个快捷需求详情</title>
-    <link rel="stylesheet" href="../../../css/comment.css">
-    <link rel="stylesheet" href="../../../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../css/company.css">
+    <title>商品列表管理</title>
+    <link rel="stylesheet" href="../../../../css/comment.css">
+    <link rel="stylesheet" href="../../../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../../css/company.css">
 </head>
 <body>
 <div id="top-site-wrap" class="top-site-wrap">
@@ -74,37 +74,36 @@
 </div>
 
 <div class="container user">
-    <p class="user-htitle">
-        <a href="">企业中心</a>
-        <span> > </span>
-        <a href="">企业信息</a>
-        <span> > </span>
-        网站管理
-    </p>
     <ul class="user-top-menu cl">
         <li class="active">
-            <a href=""><i class="fa fa-home"></i>我的机器猫</a>
+            <a href=""><i class="fa fa-home"></i>虚拟办公室</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">项目部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">业务部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">人事部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">财务部</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">企业信息</a>
         </li>
         <li>
-            <a href="">我是雇主</a>
+            <a href="">账户</a>
+        </li>
+        <li>
+            <a href="">站内信</a>
+        </li>
+        <li>
+            <a href="">快捷</a>
         </li>
     </ul>
-    <div class="user-con cl  da-size">
+    <div class="user-con cl">
         <div class="float-l l w120">
             <ul class="l-menu">
                 <li class="active">
@@ -144,35 +143,68 @@
         </div>
         <div class="float-r r w860">
             <h2 class="r-title">
-                服务申请管理
+                商品管理
+                <select class="com-select">
+                    <option>资源分类</option>
+                </select>
+                <span class="mail-address">
+                    <a href="">分类管理</a>
+                    <a href="">添加产品</a>
+                </span>
             </h2>
-            <div class="serviced">
-                <div class="s-img">
-                    <img src="../../../images/customized_list_2.png" class="img">
-                </div>
-                <div class="s-con">
-                    <h2 class="title">哈哈哈哈哈哈</h2>
-                    <p>隶属分类：放到</p>
-                    <p>有效时间剩余：放到</p>
-                    <p>赏金：放到</p>
-                </div>
-                <table class="s-table">
-                    <tr class="head">
-                        <td>申请方昵称</td>
-                        <td>用户留言</td>
-                        <td>操作</td>
+            <div class="com-list">
+
+            </div>
+            <div class="com-list">
+                <span class="tag">移动</span>
+                <span class="tag">删除</span>
+                <span class="tag">下架</span>
+            </div>
+            <div class="com-list">
+                <table>
+                    <tr class="tr-head">
+                        <th><input type="checkbox"></th>
+                        <th>图片</th>
+                        <th>标题</th>
+                        <th>所属分类</th>
+                        <th>价格</th>
+                        <th>操作</th>
                     </tr>
                     <tr>
-                        <td>哈哈哈</td>
-                        <td>哈哈哈</td>
+                        <td><input type="checkbox"></td>
+                        <td><img src="../../../../images/customized_list_2.png" class="img"></td>
+                        <td>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</td>
                         <td>
-                            <p><a href="">授予</a></p>
-                            <p><a href="">付款</a></p>
-                            <p><a href="">确认收货</a></p>
+                            <select class="tr-select">
+                                <option>保密</option>
+                            </select>
+                        </td>
+                        <td>545644</td>
+                        <td>
+                            <p><a href="">编辑</a></p>
+                            <p><a href="">删除</a></p>
                         </td>
                     </tr>
                 </table>
             </div>
+
+            <ul class="page">
+                <li>
+                    <a href="">上一页</a>
+                </li>
+                <li class="active">
+                    <a href="">1</a>
+                </li>
+                <li>
+                    <a href="">2</a>
+                </li>
+                <li>
+                    <a href="">3</a>
+                </li>
+                <li>
+                    <a href="">下一页</a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

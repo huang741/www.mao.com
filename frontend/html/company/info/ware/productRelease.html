@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品发布</title>
+    <link rel="stylesheet" href="../../../../css/comment.css">
+    <link rel="stylesheet" href="../../../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../../kiteditor/themes/default/default.css" />
+    <link rel="stylesheet" href="../../../../css/company.css">
+    <script charset="utf-8" src="../../../../kiteditor/kindeditor-min.js"></script>
+    <script>
+        var editor;
+
+        KindEditor.ready(function(K) {
+            editor = K.create('textarea[name="content"]', {
+                resizeType : 0,
+                allowPreviewEmoticons : false,
+                width : "650px",
+                height : "400px",
+                items : [
+                    'source','fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                    'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright',  '|','flash','media', 'emoticons', 'image','multiimage', 'link','unlink'],
+                afterCreate : function() { this.sync(); },
+                afterBlur:function(){ this.sync(); }
+
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="top-site-wrap" class="top-site-wrap">
+    <div class="container cl">
+        <ul class="float-l">
+            <li class="set-loginInfo">
+                <a href="javascript:;" class="cur ">登陆</a>
+                <a href="javascript:;">注册</a>
+            </li>
+        </ul>
+        <ul class="float-r set-menu-r">
+            <li class="menu user">
+                <div class="menu-hd"><a href="javascript:;"><span class="h-ico"></span><span>用户中心</span></a></div>
+            </li>
+            <li class="menu info">
+                <div class="menu-hd"><a href="javascript:;"><span class="h-ico"></span><span>消息</span></a></div>
+            </li>
+            <li class="menu service">
+                <div class="menu-hd"><a href="javascript:;"><span class="h-ico"></span><span>客服</span></a></div>
+            </li>
+            <li class="menu phone">
+                <div class="menu-hd"><a href="javascript:;"><span class="h-ico"></span><span>手机版</span></a></div>
+            </li>
+            <li class="menu gps">
+                <div class="menu-hd"><a href="javascript:;"><span class="h-ico"></span><span>导航</span></a></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="header">
+    <div class="container">
+        <div class="logo"><a href="javascript:;"><img src="../images/logo195x22.png" alt=""></a></div>
+        <div class="search-center">
+            <div class="search-bd">
+                <div class="bd-input">
+                    <div class="bd-input-select">
+                        <div class="bd-select-hd">
+                            <span class="select-txt">方案产品</span>
+                            <span class="down-ico"></span>
+                        </div>
+                        <ul class="bd-select-bd">
+                            <li class="select-item"></li>
+                            <li class="select-item"></li>
+                            <li class="select-item"></li>
+                        </ul>
+                    </div>
+                    <div class="bd-input-bd">
+                        <input class="search-ipt" type="text" name="" id="" placeholder="智能手机方案">
+                    </div>
+                </div>
+                <div class="bd-btn">
+                    <a href="javascript:;">搜索</a>
+                </div>
+            </div>
+            <div class="search-nav">
+                <ul class="serch-nav-hd">
+                    <li>热门搜索</li>
+                    <li><a href="javascript:;">X86方案</a></li>
+                    <li class="cur"><a href="javascript:;">智能手机方法</a></li>
+                    <li><a href="javascript:;">服务器主板</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container user">
+    <ul class="user-top-menu cl">
+        <li class="active">
+            <a href=""><i class="fa fa-home"></i>虚拟办公室</a>
+        </li>
+        <li>
+            <a href="">项目部</a>
+        </li>
+        <li>
+            <a href="">业务部</a>
+        </li>
+        <li>
+            <a href="">人事部</a>
+        </li>
+        <li>
+            <a href="">财务部</a>
+        </li>
+        <li>
+            <a href="">企业信息</a>
+        </li>
+        <li>
+            <a href="">账户</a>
+        </li>
+        <li>
+            <a href="">站内信</a>
+        </li>
+        <li>
+            <a href="">快捷</a>
+        </li>
+    </ul>
+    <div class="user-con cl">
+        <div class="float-l l w120">
+            <ul class="l-menu">
+                <li class="active">
+                    <a href="">店铺设置</a>
+                </li>
+                <li>
+                    <a href="">企业信息</a>
+                </li>
+                <li>
+                    <a href="">案列</a>
+                </li>
+                <li>
+                    <a href="">企业介绍</a>
+                </li>
+                <li>
+                    <a href="">自由页管理</a>
+                </li>
+                <li>
+                    <a href="">水印管理</a>
+                </li>
+                <li>
+                    <a href="">地址管理</a>
+                </li>
+                <li>
+                    <a href="">买入订单管理</a>
+                </li>
+                <li>
+                    <a href="">卖出订单管理</a>
+                </li>
+                <li>
+                    <a href="">快捷需求发布管理</a>
+                </li>
+                <li>
+                    <a href="">快捷需求申请管理</a>
+                </li>
+            </ul>
+        </div>
+        <div class="float-r r w860">
+            <h2 class="r-title">产品发布表单</h2>
+            <div class="prelease">
+                <p class="explain">信息填写越完善，服务曝光率越高，越获得雇主认可。</p>
+                <div class="release-list">
+                     <span class="name">标题</span>
+                     <input type="text" class="r-text">
+                     <span class="zs">还能输入30字</span>
+                </div>
+                <div class="release-list">
+                    <span class="name">价格</span>
+                    <input type="text" class="r-text1">
+                    <span class="zs">元</span>
+                </div>
+                <div class="release-list">
+                    <span class="name named">封面图片</span>
+                    <img src="../../../../images/customized_list_2.png" class="big-img">
+                    <span class="small-img">
+                        <ul class="small-img-ul cl">
+                            <li><img src="../../../../images/customized_list_2.png"></li>
+                            <li><img src="../../../../images/customized_list_2.png"></li>
+                            <li><img src="../../../../images/customized_list_2.png"></li>
+                            <li><img src="../../../../images/customized_list_2.png"></li>
+                        </ul>
+                        <p class="tail">
+                            <a href="" class="t-btn">上传图片</a>
+                            <span class="span span-one">1.图片尺寸低于400*400，大小不超过500k。 </span>
+                            <span class="span span-two"> 2.图片尽量清晰，并能够体现服务卖点。 </span>
+                        </p>
+                    </span>
+                </div>
+                <div class="release-list">
+                    <span class="name">所属分类</span>
+                    <select class="r-select">
+                        <option>系统开发</option>
+                    </select>
+                    <select class="r-select">
+                        <option>ID结构</option>
+                    </select>
+                </div>
+                <div class="release-list release-listed cl">
+                    <span class="name">支持服务</span>
+                    <div class="radio">
+                        <p><input type="radio" name="a"> 押金抽样  <a href="" class="x">什么是支持押金抽样</a></p>
+                        <p><input type="radio" name="a"> 支持二次开发</p>
+                        <p><input type="radio" name="a"> 已量产</p>
+                        <p><input type="radio" name="a"> 卖家承担</p>
+                        <p><input type="radio" name="a"> 买家承担 <span class="x">运费10元</span></p>
+                    </div>
+                </div>
+                <div class="release-list release-listed cl">
+                    <span class="name named">详情介绍</span>
+                    <textarea class="form-control" name="content" ></textarea>
+                </div>
+                <div class="release-list release-listed cl">
+                    <span class="name named">成功案例</span>
+                    <textarea class="form-control" name="content" ></textarea>
+                </div>
+                <div class="release-list release-listed cl">
+                    <span class="name named">需求附件</span>
+                    <div class="need">
+                        <p>
+                            <input type="text" class="r-text2">
+                            <a href="" class="need-a">上传附件</a>
+                        </p>
+                        <p>
+                            <span class="checkbox"><input type="checkbox">申请为前沿产品</span>
+                            <span class="sm">如果您认为您的产品很有特色可以申请为前沿产品，前沿产品需要经过管理员审核，审核通过后可以优先展示在前沿产品推荐列表</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="release-list">
+                    <span class="name"></span>
+                    <a href="" class="t-btn">立即发布</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container cl">
+        <div class="float-l">© 2010-2015 jjj.com版权所有</div>
+        <ul class="float-l nav">
+            <li>
+                <a href="">著作权与商标声明</a>
+            </li>
+            <li>
+                <a href="">法律声明</a>
+            </li>
+            <li>
+                <a href="">服务条款</a>
+            </li>
+            <li>
+                <a href="">隐私声明</a>
+            </li>
+            <li>
+                <a href="">关于机器猫</a>
+            </li>
+            <li>
+                <a href="">联系我们</a>
+            </li>
+            <li>
+                <a href="">网址导航</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
