@@ -442,6 +442,7 @@ td {
   left: 50%;
   margin-left: -235px;
   background-color: #fff;
+  display: none;
 }
 
 .share-price .title {
@@ -2421,13 +2422,14 @@ td {
 }
 
 .setExplain .add-file {
-  width: 100px;
-  height: 100px;
+  width: 400px;
+  height: 200px;
   background-color: #000000;
   position: absolute;
-  top: 50px;
-  left: 200px;
+  top: 0;
+  left: 0;
   opacity: 0;
+  z-index: 999;
 }
 
 .setExplain .add {

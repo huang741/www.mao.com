@@ -130,7 +130,9 @@
                             <div>
                                 <div class="form-text form-textlen"></div>
                                 <div class="tag">
-                                    <span>主板开发<b>×</b></span><span>主板开发<b>×</b></span><span>主板开发<b>×</b></span>
+                                    <span>主板开发1<b>×</b></span>
+                                    <span>主板开发2<b>×</b></span>
+                                    <span>主板开发3<b>×</b></span>
                                 </div>
                             </div>
                             <div class="selectTag">
@@ -278,10 +280,10 @@
                 <div class="form-list cl">
                     <span class="name nameed">业务类型</span>
                     <div class="nservice">
-                        <div class="nserviceText">
+                        <div class="nserviceText fservice">
                             <div class="form-text"></div>
                             <div class="tag">
-                                <span>主板开发<b>×</b></span><span>主板开发<b>×</b></span><span>主板开发<b>×</b></span>
+                                <span>主板开发1<b>×</b></span><span>主板开发22<b>×</b></span><span>主板开发33<b>×</b></span>
                             </div>
                         </div>
                         <div class="selectTag">
@@ -362,6 +364,9 @@
 <script>
     $(function(){
         registerShow();
+        $(".fservice .tag span").click(function(){
+            $(this).remove();
+        });
     })
 </script>
 </body>

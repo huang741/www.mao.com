@@ -535,6 +535,20 @@
   top: 5px;
   color: #999;
   border-bottom: 1px solid #999;
+  cursor: pointer;
+}
+.pay-buy .addressList .text{
+  width: 366px;
+  border: 1px solid #ddd;
+  height: 25px;
+  margin: 0 5px;
+  padding: 0 5px;
+}
+.pay-buy .addressList .textd{
+  border: 0;
+  width: 366px;
+  height: 25px;
+  padding: 0 5px;
 }
 .pay-buy .addressList .edit .case {
   border: 1px solid #ccc;

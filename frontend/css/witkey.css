@@ -201,6 +201,15 @@
   height: 35px;
   line-height: 35px;
   text-align: center;
+  position: relative;
+}
+.prelease .release-list .t-btn .file{
+  position: absolute;
+  width: 160px;
+  height: 35px;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 .prelease .release-list .r-select {
   border: 1px solid #ddd;

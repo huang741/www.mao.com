@@ -273,9 +273,24 @@ input, select {
   line-height: 38px;
   font-size: 14px;
   cursor: pointer;
+  position: relative;
 }
 .search-center .search-bd .bd-input .bd-select-hd span {
   float: left;
+}
+.bd-select-hd .index-select{
+  position: absolute;
+  left: -1px;
+  top: 38px;
+  background-color: #fff;
+  z-index: 999;
+  text-align: center;
+  border: 1px solid #fc6303;
+  border-top: 0;
+  display: none;
+}
+.bd-select-hd .index-select li{
+  padding: 0 12px;
 }
 .search-center .search-bd .bd-input .bd-select-hd .select-txt {
   margin-right: 8px;

@@ -21,7 +21,7 @@
                     <span class="name"></span><textarea class="seller-textarea"></textarea>
                 </div>
                 <div>
-                    <span class="name">需求变动率</span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    <span class="name">需求变动率</span><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
                 </div>
                 <div>
                     <span class="name">配合度</span><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
@@ -36,5 +36,19 @@
         </div>
     </div>
 </div>
+
+<script src="../../js/jquery.js"></script>
+<script>
+    $(".seller-con > div i").click(function(){
+        var index  = $(this).index();
+        $(this).parent("div").children("i").each(function(){
+            $(this).attr("class","fa fa-star-o");
+        });
+        for (var i = 0;i<index;i++) {
+            $(this).parent("div").children("i").eq(i).attr("class","fa fa-star");
+        }
+
+    });
+</script>
 </body>
 </html>

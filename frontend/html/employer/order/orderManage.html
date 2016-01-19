@@ -254,7 +254,7 @@
 	            			<td>xxxx</td>
 	            			<td>xxx</td>
 	            			<td>xxx</td>
-	            			<td><a href="">取消订单</a></td>
+	            			<td><a href="javascript:;" id="cancel">取消订单</a></td>
 	            		</tr>
 	            	</table>
 	            </div>
@@ -317,7 +317,7 @@
     </div>
 </div>
 
-<div class="share" style="display: block"></div>
+<div class="share"></div>
 <div class="share-price">
     <p class="title">您确认要取消该订单吗？订单取消后，将不可恢复。</p>
     <p>
@@ -327,7 +327,7 @@
     </p>
     <p class="p-btn">
         <a href="" class="btn">确认</a>
-        <a href="" class="btn btned">关闭</a>
+        <a href="javascript:;" class="btn btned" id="btned">关闭</a>
     </p>
 </div>
 
@@ -362,12 +362,20 @@
 </div>
 </body>
 
-<script src="../../js/jquery.js"></script>
+<script src="../../../js/jquery.js"></script>
 <script>
+    $("#cancel").click(function(){
+        $(".share").show();
+        $(".share-price").show();
+    });
     $(".share").click(function(){
         $(".share").hide();
         $(".share-price").hide();
-    })
+    });
+    $("#btned").click(function(){
+        $(".share").hide();
+        $(".share-price").hide();
+    });
 </script>
 
 </html>

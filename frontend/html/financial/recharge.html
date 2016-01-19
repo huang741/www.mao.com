@@ -126,7 +126,7 @@
             </h2>
             <div class="recharge">
                 <h3 class="sub-title">支付平台</h3>
-                <ul class="recharge-ul cl">
+                <ul class="recharge-ul cl" id="terraceUl">
                     <li>
                         <i class="fa fa-circle-o"></i>
                         <img src="../../images/recharge.png">
@@ -170,5 +170,17 @@
         </ul>
     </div>
 </div>
+<script src="../../js/jquery.js"></script>
+<script>
+    $(function(){
+        $("#terraceUl li").click(function(){
+            $("#terraceUl li i").removeClass("fa-check-circle");
+            $("#terraceUl li i").addClass("fa-circle-o");
+            $(this).children("i").removeClass("fa-circle-o");
+            $(this).children("i").addClass("fa-check-circle");
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    })
+</script>
 </body>
 </html>

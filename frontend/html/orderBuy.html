@@ -94,35 +94,7 @@
 
 <div class="container">
     <div class="pay">
-        <!--<ul class="payUl cl">-->
-            <!--<li class="active">-->
-                <!--<a href=""><i class="fa fa-home"></i>虚拟办公室</a>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<a href="">项目部</a>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<a href="">业务部</a>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<a href="">人事部</a>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<a href="">财务部</a>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<a href="">企业信息</a>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<a href="">账户</a>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<a href="">站内信</a>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<a href="">快捷</a>-->
-            <!--</li>-->
-        <!--</ul>-->
+
         <div class="payCon">
             <h2 class="pay-title">订购服务</h2>
             <div class="pay-head">
@@ -137,28 +109,23 @@
             <div class="pay-buy">
                 <div class="payBuy-one">
                     <p class="buy-title">确认联系信息</p>
-                    <ul class="addressList">
-                        <li>
-                            <div class="case">
-                                <i class="fa fa-circle-thin"></i>
-                                <span>广东省</span>
-                                <span>广州市</span>
-                                <span>天河区</span>
-                                <span>黄埔大道（黄哈哈 收）</span>
-                                <span>11254789632</span>
-                                <span>默认地址</span>
-                            </div>
-                        </li>
+                    <ul class="addressList" id="addressList">
                         <li class="active">
                             <div class="case">
                                 <i class="fa fa-dot-circle-o"></i>
-                                <span>广东省</span>
-                                <span>广州市</span>
-                                <span>天河区</span>
-                                <span>黄埔大道（黄哈哈 收）</span>
-                                <span>11254789632</span>
+                                <span>广东省 广州市 天河区  黄埔大道（黄哈哈 收 11254789632</span> 默认地址
                             </div>
                             <span class="amend">修改本地址</span>
+                        </li>
+                        <li>
+                            <div class="case">
+                                <i class="fa fa-circle-thin"></i>
+                                广东省
+                                广州市
+                                天河区
+                                黄埔大道（黄哈哈 收
+                                11254789632
+                            </div>
                         </li>
                         <li class="last-li">
                             <a href="">使用其他地址</a>
@@ -184,9 +151,9 @@
                             <div>卖家信息</div>
                             <div>单价（元）</div>
                             <div>
-                                <p><i class="fa fa-angle-up"></i></p>
-                                <input type="text" class="td-text" />
-                                <p><i class="fa fa-angle-down"></i></p>
+                                <p id="up"><i class="fa fa-angle-up"></i></p>
+                                <input type="text" class="td-text" id="moneyText" />
+                                <p id="down"><i class="fa fa-angle-down"></i></p>
                             </div>
                             <div>优惠</div>
                             <div>总价（元）</div>
@@ -254,5 +221,44 @@
         </ul>
     </div>
 </div>
+
+<input type="hidden" id="hidden">
+<script src="../js/jquery.js"></script>
+<script>
+    $("#addressList li").not(":last-child").click(function(){
+        $(".addressList li .amend").remove();
+        $(".addressList li i").removeClass("fa-dot-circle-o");
+        $(".addressList li i").addClass("fa-circle-thin");
+        $(this).find("i").removeClass("fa-circle-thin");
+        $(this).find("i").addClass("fa-dot-circle-o");
+        $(this).addClass("active").siblings().removeClass("active");
+        $(this).append('<span class="amend">修改本地址</span>');
+    });
+//    $("#addressList li .amend").click(function(){
+//        var html = $(this).prev(".case").children("span").text();
+//        $("#hidden").val("");
+//        $("#hidden").val(html);
+//        $(this).prev(".case").children("span").remove();
+//        $(this).prev(".case").children(".fa").after("<input type='text' class='text' value='"+html+"' onblur='show()'>");
+//    });
+//    function show(){
+//        var html = $("#hidden").val();
+//        $("#addressList li .text").remove();
+//        $("#addressList li .case i").after("<span>"+html+"</span>");
+//    }
+    $("#up").click(function(){
+        var text = $("#moneyText").val();
+        text++;
+        $("#moneyText").val(text);
+    });
+    $("#down").click(function(){
+        var text = $("#moneyText").val();
+        text--;
+        if(text<0){
+            text=0;
+        }
+        $("#moneyText").val(text);
+    });
+</script>
 </body>
 </html>

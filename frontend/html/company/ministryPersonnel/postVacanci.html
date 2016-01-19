@@ -193,12 +193,12 @@
             	<div class="pv-list po-work">
             		<span class="name s-top">职位待遇</span>
             		<textarea class="textarea"></textarea>
-            		<p class="pv-index">
-            			<span class="index">绩效奖金<span class="close-index">×</span></span>
-            			<span class="index">管理规范<span class="close-index">×</span>
-            		</p>
+            		<div class="pv-index" id="pvIndex">
+            			<span class="index" onclick="del(this)">绩效奖金<span class="close-index">×</span></span>
+            			<span class="index" onclick="del(this)">管理规范<span class="close-index">×</span></span>
+            		</div>
             		<div class="ul cl">
-            			<ul>
+            			<ul id="pvUl">
             				<li>绩效奖金</li>
             				<li>管理规范</li>
             				<li>交通补贴</li>
@@ -207,18 +207,14 @@
             				<li>舒适环境</li>
             				<li>带薪年假</li>
             				<li>节日礼物</li>
-            			</ul>
-            		</div>
-            		<div class="ul cl">
-            			<ul>
-            				<li>五险一金</li>
-            				<li>管理规范</li>
-            				<li>交通补贴</li>
-            				<li>午餐补助</li>
-            				<li>五险一金</li>
-            				<li>舒适环境</li>
-            				<li>带薪年假</li>
-            				<li>节日礼物</li>
+							<li>五险一金</li>
+							<li>管理规范</li>
+							<li>交通补贴</li>
+							<li>午餐补助</li>
+							<li>五险一金</li>
+							<li>舒适环境</li>
+							<li>带薪年假</li>
+							<li>节日礼物</li>
             			</ul>
             		</div>
             	</div>	
@@ -313,5 +309,19 @@
         </ul>
     </div>
 </div>
+
+<script src="../../../js/jquery.js"></script>
+<script>
+
+	$("#pvUl li").click(function(){
+		var text = $(this).text();
+		$("#pvIndex").append('<span class="index" onclick="del(this)">'+text+'<span class="close-index">×</span></span>');
+	});
+
+	function del(obj){
+        obj.remove();
+	}
+
+</script>
 </body>
 </html>
