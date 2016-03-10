@@ -678,3 +678,70 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 }
 
 /*尾部*/
+/*顶部导航*/
+.set-nav-r li {
+  position: relative;
+}
+.set-nav-r li .bg-white {
+  background-color: #fff;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 3px #333;
+  z-index: 999;
+  display: none;
+}
+.set-nav-r li .bg-line {
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  left: -1px;
+  right: 0;
+  z-index: 1000;
+  display: none;
+}
+.set-nav-r li.gps .menu-hd {
+  z-index: 1000;
+}
+.set-nav-r li.gps:hover {
+  background-color: #fff;
+}
+.set-nav-r li.gps:hover .bg-white, .set-nav-r li.gps:hover .bg-line, .set-nav-r li.gps:hover .sub-menu {
+  display: block;
+}
+
+li.gps .sub-menu {
+  position: absolute;
+  top: 49px;
+  z-index: 888;
+  background-color: #fff;
+  right: 0;
+  width: 930px;
+  padding: 35px;
+  box-shadow: 0 1px 3px #333;
+  display: none;
+}
+li.gps .sub-menu > li {
+  float: left;
+  margin-right: 50px;
+}
+li.gps .sub-menu > li > a {
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 10px;
+  border-left: 3px solid #fc6303;
+}
+li.gps .sub-menu > li p {
+  margin-top: 20px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+li.gps .sub-menu > li p a {
+  color: #666;
+}
+
+/*顶部导航*/
