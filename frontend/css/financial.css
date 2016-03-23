@@ -1,265 +1,210 @@
 @charset "UTF-8";
 /*公共样式*/
 .w120 {
-  width: 120px;
-}
+  width: 120px; }
 
 .w860 {
-  width: 860px;
-}
+  width: 860px; }
 
 .user .user-top-menu {
   margin: 20px 0;
-  border: 1px solid #ddd;
-}
-.user .user-top-menu li {
-  float: left;
-  padding: 15px 25px;
-}
-.user .user-top-menu li i {
-  margin-right: 5px;
-}
-.user .user-top-menu li.active {
-  background-color: #e6e6e6;
-}
+  border: 1px solid #ddd; }
+  .user .user-top-menu li {
+    float: left;
+    padding: 15px 25px; }
+    .user .user-top-menu li i {
+      margin-right: 5px; }
+    .user .user-top-menu li.active {
+      background-color: #e6e6e6; }
 
 .user-con .l-menu {
-  border: 1px solid #ddd;
-}
-.user-con .l-menu li {
-  padding: 15px 0;
-  text-align: center;
-}
-.user-con .l-menu li.active a {
-  color: #f9671e;
-}
+  border: 1px solid #ddd; }
+  .user-con .l-menu li {
+    padding: 15px 0;
+    text-align: center; }
+    .user-con .l-menu li.active a {
+      color: #f9671e; }
 
 .user-con .r .r-title {
   font-size: 20px;
   padding: 20px 0;
-  border-bottom: 1px solid #ddd;
-}
+  border-bottom: 1px solid #ddd; }
 
 .r .r-title .t-sub {
   font-size: 14px;
   font-weight: 300;
-  padding-top: 12px;
-}
-.r .r-title .t-sub a {
-  margin-right: 10px;
-}
+  padding-top: 12px; }
+  .r .r-title .t-sub a {
+    margin-right: 10px; }
 
 .r .r-title .r-p {
   font-size: 14px;
   font-weight: 300;
-  margin-top: 15px;
-}
-.r .r-title .r-p span {
-  margin-right: 10px;
-}
-.r .r-title .r-p span:last-child {
-  margin-right: 0;
-}
-.r .r-title .r-p span select {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  height: 28px;
-  width: 118px;
-  resize: none;
-}
-.r .r-title .r-p .btn-span {
-  float: right;
-}
-.r .r-title .r-p .btn-span a {
-  display: inline-block;
-  background-color: #009ffa;
-  color: #fff;
-  width: 160px;
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-}
+  margin-top: 15px; }
+  .r .r-title .r-p span {
+    margin-right: 10px; }
+    .r .r-title .r-p span:last-child {
+      margin-right: 0; }
+    .r .r-title .r-p span select {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      height: 28px;
+      width: 118px;
+      resize: none; }
+  .r .r-title .r-p .btn-span {
+    float: right; }
+    .r .r-title .r-p .btn-span a {
+      display: inline-block;
+      background-color: #009ffa;
+      color: #fff;
+      width: 160px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center; }
 
 /*公共样式*/
 /*绑定银行卡列表*/
 .cardlist .table {
   border-collapse: collapse;
   margin-top: 20px;
-  width: 100%;
-}
-.cardlist .table .head td {
-  height: 30px;
-  background-color: #f0f0f0;
-}
-.cardlist .table td {
-  border: 1px solid #ddd;
-  text-align: center;
-  padding: 5px;
-  height: 60px;
-}
+  width: 100%; }
+  .cardlist .table .head td {
+    height: 30px;
+    background-color: #f0f0f0; }
+  .cardlist .table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 5px;
+    height: 60px; }
 
 /*绑定银行卡列表*/
 /*充值*/
 .recharge {
   margin-top: 20px;
-  padding-left: 20px;
-}
-.recharge .sub-title {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-.recharge .recharge-ul li {
-  float: left;
-  width: 156px;
-  height: 80px;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  text-align: center;
-  line-height: 80px;
-  margin-right: 20px;
-}
-.recharge .recharge-ul li i {
-  color: #ddd;
-  font-size: 20px;
-}
-.recharge .recharge-ul li img {
-  width: 88px;
-  height: 48px;
-  margin-left: 10px;
-}
-.recharge .recharge-ul li.active i {
-  color: #fc6303;
-}
-.recharge .btn {
-  display: inline-block;
-  background-color: #009ffa;
-  color: #fff;
-  width: 160px;
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-  margin-top: 20px;
-}
+  padding-left: 20px; }
+  .recharge .sub-title {
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .recharge .recharge-ul li {
+    float: left;
+    width: 156px;
+    height: 80px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    margin-right: 20px; }
+    .recharge .recharge-ul li i {
+      color: #ddd;
+      font-size: 20px; }
+    .recharge .recharge-ul li img {
+      width: 88px;
+      height: 48px;
+      margin-left: 10px; }
+    .recharge .recharge-ul li.active i {
+      color: #fc6303; }
+  .recharge .btn {
+    display: inline-block;
+    background-color: #009ffa;
+    color: #fff;
+    width: 160px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 20px; }
 
 /*充值*/
 /*收支明细*/
 .budget .table {
   border-collapse: collapse;
   margin-top: 20px;
-  width: 100%;
-}
-.budget .table .head td {
-  height: 30px;
-  background-color: #f0f0f0;
-}
-.budget .table td {
-  border: 1px solid #ddd;
-  text-align: center;
-  padding: 5px;
-  height: 60px;
-}
-.budget .table td:nth-of-type(1) {
-  width: 140px;
-}
-.budget .table td:nth-of-type(2) {
-  width: 130px;
-}
-.budget .table td:nth-of-type(3) {
-  width: 180px;
-}
-.budget .table td:nth-of-type(4) {
-  width: 200px;
-}
-.budget .table td:nth-of-type(5) {
-  width: 120px;
-}
-.budget .table td:nth-of-type(6) {
-  width: 80px;
-}
-.budget .table td a {
-  text-decoration: underline;
-}
+  width: 100%; }
+  .budget .table .head td {
+    height: 30px;
+    background-color: #f0f0f0; }
+  .budget .table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 5px;
+    height: 60px; }
+    .budget .table td:nth-of-type(1) {
+      width: 140px; }
+    .budget .table td:nth-of-type(2) {
+      width: 130px; }
+    .budget .table td:nth-of-type(3) {
+      width: 180px; }
+    .budget .table td:nth-of-type(4) {
+      width: 200px; }
+    .budget .table td:nth-of-type(5) {
+      width: 120px; }
+    .budget .table td:nth-of-type(6) {
+      width: 80px; }
+    .budget .table td a {
+      text-decoration: underline; }
 
 /*收支明细*/
 /*提现*/
 .withdraw {
   margin-top: 20px;
-  padding-left: 20px;
-}
-.withdraw .name {
-  display: inline-block;
-  width: 60px;
-  text-align: right;
-  padding-right: 5px;
-}
-.withdraw .w-list {
-  margin-bottom: 20px;
-  height: 35px;
-  line-height: 35px;
-}
-.withdraw .w-list .w-text {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  height: 33px;
-  width: 198px;
-  resize: none;
-}
-.withdraw .w-list .explain {
-  color: #999;
-}
-.withdraw .w-list .explained {
-  color: #1ca7f4;
-}
-.withdraw .w-list .btn {
-  display: inline-block;
-  background-color: #009ffa;
-  color: #fff;
-  width: 160px;
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-  margin-left: 70px;
-}
+  padding-left: 20px; }
+  .withdraw .name {
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+    padding-right: 5px; }
+  .withdraw .w-list {
+    margin-bottom: 20px;
+    height: 35px;
+    line-height: 35px; }
+    .withdraw .w-list .w-text {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      height: 33px;
+      width: 198px;
+      resize: none; }
+    .withdraw .w-list .explain {
+      color: #999; }
+    .withdraw .w-list .explained {
+      color: #1ca7f4; }
+    .withdraw .w-list .btn {
+      display: inline-block;
+      background-color: #009ffa;
+      color: #fff;
+      width: 160px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      margin-left: 70px; }
 
 /*提现*/
 /*账户总览*/
 .overview .over-list {
-  margin-top: 20px;
-}
-.overview .over-list .o-l {
-  padding-left: 20px;
-}
-.overview .over-list .info span {
-  margin-right: 30px;
-}
-.overview .over-list .info span b {
-  font-weight: 300;
-  color: #fc6303;
-}
-.overview .over-list .btn-list {
-  margin-top: 15px;
-}
-.overview .over-list .btn-list .btn {
-  display: inline-block;
-  background-color: #009ffa;
-  color: #fff;
-  width: 160px;
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-}
-.overview .over-list .btn-list .yellow {
-  background-color: #fc6303;
-}
-.overview .over-list .over-ul {
-  border-bottom: 1px solid #ddd;
-}
-.overview .over-list .over-ul li {
-  float: left;
-  padding: 10px 20px;
-}
-.overview .over-list .over-ul li.active a {
-  color: #fc6303;
-}
+  margin-top: 20px; }
+  .overview .over-list .o-l {
+    padding-left: 20px; }
+  .overview .over-list .info span {
+    margin-right: 30px; }
+    .overview .over-list .info span b {
+      font-weight: 300;
+      color: #fc6303; }
+  .overview .over-list .btn-list {
+    margin-top: 15px; }
+    .overview .over-list .btn-list .btn {
+      display: inline-block;
+      background-color: #009ffa;
+      color: #fff;
+      width: 160px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center; }
+    .overview .over-list .btn-list .yellow {
+      background-color: #fc6303; }
+  .overview .over-list .over-ul {
+    border-bottom: 1px solid #ddd; }
+    .overview .over-list .over-ul li {
+      float: left;
+      padding: 10px 20px; }
+      .overview .over-list .over-ul li.active a {
+        color: #fc6303; }
 
 /*账户总览*/

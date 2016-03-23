@@ -94,3 +94,11 @@ var productContrast=function(){
     });
 }
 /*²úÆ·¶Ô±È*/
+
+/*×ó±ß²Ëµ¥Ê÷×´*/
+var treeMenu=function(){
+    $(".l-menu-g > li").click(function(){
+        $(this).children().toggle();
+    })
+}
+/*×ó±ß²Ëµ¥Ê÷×´*/
